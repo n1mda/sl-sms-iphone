@@ -17,7 +17,7 @@
 
 @synthesize reduced;
 
-@synthesize aZone, bZone, cZone, zones;
+@synthesize zoneSwitches, zones;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,7 +29,6 @@
 - (void)dealloc
 {
     [_detailViewController release];
-    [aZone release], [bZone release], [cZone release], [reduced release];
     [super dealloc];
 }
 
@@ -78,24 +77,30 @@
 
 - (IBAction)generate:(id)sender {
     
-    zones = [[NSMutableArray alloc] init];
+    zones = [[NSMutableArray alloc] initWithCapacity:3];
     
-    if(aZone.on) [zones addObject:@"A"];
-    if(bZone.on) [zones addObject:@"B"];
-    if(bZone.on) [zones addObject:@"C"];
+    for (UISwitch *zoneSwitch in zoneSwitches) {
+        if (zoneSwitch.on) {
+            unichar zone = 'A' + zoneSwitch.tag;
+            [zones addObject:[NSString stringWithCharacters:&zone length:1]];
+        }
+    }
+	
+    [zones sortUsingSelector:@selector(caseInsensitiveCompare:)];
     
-    if([zones count] == 0) {
+    if(![zones count]) {
         return;
     }
     
     SL_SMS *sl = [[SL_SMS alloc] init];
     SMS *sms = [sl createSLMessageWithReduced:reduced.on zones:zones];
     
-    DetailViewController *detailViewController = [[[DetailViewController alloc] init] autorelease];
+    DetailViewController *detailViewController = [[DetailViewController alloc] init];
     [detailViewController setSms:sms];
     
     [self.navigationController pushViewController:detailViewController animated:YES];
     
+	[detailViewController release];
     [zones release];
 }
 

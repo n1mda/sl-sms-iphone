@@ -71,7 +71,6 @@
     
     // 1 zone (valid 75 min), 2 zones (valid 75 min), 3 zones (valid 120 min)
     NSArray *timeValid = [[NSArray alloc] initWithObjects:[NSNumber numberWithInt:75], [NSNumber numberWithInt:75], [NSNumber numberWithInt:120], nil];
-
     
     NSArray *months = [[NSArray alloc] initWithObjects:@"jan", @"feb", @"mar", @"apr", @"maj", @"jun", @"jul", @"aug", @"sep", @"okt", @"nov", @"dec", nil];
     
@@ -87,7 +86,7 @@
         priceText = @"R";
         priceText2 = @"RED PRIS";
                 
-        price = (NSInteger )[[prices objectAtIndex:[zones count]-1] integerValue] * reducedPriceFactor;
+        price = (NSInteger)[[prices objectAtIndex:[zones count]-1] integerValue] * reducedPriceFactor;
         
     } else {
         // H
@@ -95,7 +94,7 @@
         priceText = @"H";
         priceText2 = @"Helt pris";
         
-        price = (NSInteger )[[prices objectAtIndex:[zones count]-1] integerValue];
+        price = (NSInteger)[[prices objectAtIndex:[zones count]-1] integerValue];
     }
     
     // Month char, used in check sum
@@ -104,27 +103,15 @@
     
     // Order day
     // 1533A_16_112J5B2TUE
-    NSString *orderDay;
-    if(day < 10)
-        orderDay = [NSString stringWithFormat:@"0%d", day];
-    else
-        orderDay = [NSString stringWithFormat:@"%d", day];
+    NSString *orderDay = [NSString stringWithFormat:@"%02d", day];
         
     // Order hour
     // _15_33A16112J5B2TUE
-    NSString *orderHour;
-    if(hour < 10)
-        orderHour = [NSString stringWithFormat:@"0%d", hour];
-    else
-        orderHour = [NSString stringWithFormat:@"%d", hour];
+    NSString *orderHour = [NSString stringWithFormat:@"%02d", hour];
     
     // Order minute
     // 15_33_A16112J5B2TUE
-    NSString *orderMinute;
-    if(minute < 10)
-        orderMinute = [NSString stringWithFormat:@"0%d", minute];
-    else
-        orderMinute = [NSString stringWithFormat:@"%d", minute];
+    NSString *orderMinute = [NSString stringWithFormat:@"%02d", minute];
     
     
     NSDate *now = [NSDate date];
@@ -135,37 +122,10 @@
     NSDateComponents *validDateComponents = [[NSCalendar currentCalendar] components:NSMinuteCalendarUnit | NSHourCalendarUnit | NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit fromDate:validDate];
     
     NSInteger validYear = [validDateComponents year];
-    NSInteger validMonth = [validDateComponents month];
-    
-    NSString *validMonthStr;
-    if(validMonth < 10)
-        validMonthStr = [NSString stringWithFormat:@"0%d", validMonth];
-    else
-        validMonthStr = [NSString stringWithFormat:@"%d", validMonth];
-    
-    NSInteger validDay = [validDateComponents day];
-    
-    NSString *validDayStr;
-    if(validDay < 10)
-        validDayStr = [NSString stringWithFormat:@"0%d", validDay];
-    else
-        validDayStr = [NSString stringWithFormat:@"%d", validDay];
-    
-    NSInteger validHour = [validDateComponents hour];
-    
-    NSString *validHourStr;
-    if(validHour < 10)
-        validHourStr = [NSString stringWithFormat:@"0%d", validHour];
-    else
-        validHourStr = [NSString stringWithFormat:@"%d", validHour];
-    
-    NSInteger validMinute = [validDateComponents minute];
-    
-    NSString *validMinuteStr;
-    if(validMinute < 10)
-        validMinuteStr = [NSString stringWithFormat:@"0%d", validMinute];
-    else
-        validMinuteStr = [NSString stringWithFormat:@"%d", validMinute];
+    NSString *validMonthStr = [NSString stringWithFormat:@"%02d", [validDateComponents month]];
+    NSString *validDayStr = [NSString stringWithFormat:@"%02d", [validDateComponents day]];
+    NSString *validHourStr = [NSString stringWithFormat:@"%02d", [validDateComponents hour]];
+    NSString *validMinuteStr = [NSString stringWithFormat:@"%d", [validDateComponents minute]];
         
     NSString *checksum = [NSString stringWithFormat:@"%@%@%@%@%d%d%d%@", orderHour, orderMinute, monthChar, orderDay, randomint3, randomint1-3, randomint4, randomString];
     NSLog(@"Checksum: %@", checksum);

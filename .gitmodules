@@ -1,0 +1,3 @@
+[submodule "ssmessagesviewcontroller"]
+	path = ssmessagesviewcontroller
+	url = git://github.com/n1mda/ssmessagesviewcontroller.git

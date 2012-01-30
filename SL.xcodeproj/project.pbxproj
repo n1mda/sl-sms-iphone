@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2474078914D6A0D900345FB4 /* SSDrawingUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 2474075E14D6A0D800345FB4 /* SSDrawingUtilities.m */; };
+		2474078A14D6A0D900345FB4 /* SSMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2474076014D6A0D800345FB4 /* SSMessagesViewController.m */; };
+		2474078B14D6A0D900345FB4 /* SSMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2474076214D6A0D800345FB4 /* SSMessageTableViewCell.m */; };
+		2474078C14D6A0D900345FB4 /* SSMessageTableViewCellBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2474076414D6A0D800345FB4 /* SSMessageTableViewCellBubbleView.m */; };
+		2474078D14D6A0D900345FB4 /* SSTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2474076614D6A0D800345FB4 /* SSTextField.m */; };
+		247407B414D6A12200345FB4 /* SSMessagesViewControllerCameraButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 247407A614D6A12200345FB4 /* SSMessagesViewControllerCameraButton@2x.png */; };
+		247407B514D6A12200345FB4 /* SSMessagesViewControllerInputBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 247407A714D6A12200345FB4 /* SSMessagesViewControllerInputBackground.png */; };
+		247407B614D6A12200345FB4 /* SSMessagesViewControllerInputBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 247407A814D6A12200345FB4 /* SSMessagesViewControllerInputBackground@2x.png */; };
+		247407B714D6A12200345FB4 /* SSMessagesViewControllerSendButtonBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 247407A914D6A12200345FB4 /* SSMessagesViewControllerSendButtonBackground.png */; };
+		247407B814D6A12200345FB4 /* SSMessagesViewControllerSendButtonBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 247407AA14D6A12200345FB4 /* SSMessagesViewControllerSendButtonBackground@2x.png */; };
+		247407B914D6A12200345FB4 /* SSMessagesViewControllerSendButtonBackgroundGreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 247407AB14D6A12200345FB4 /* SSMessagesViewControllerSendButtonBackgroundGreen@2x.png */; };
+		247407BA14D6A12200345FB4 /* SSMessagesViewControllerTextFieldBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 247407AC14D6A12200345FB4 /* SSMessagesViewControllerTextFieldBackground.png */; };
+		247407BB14D6A12200345FB4 /* SSMessagesViewControllerTextFieldBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 247407AD14D6A12200345FB4 /* SSMessagesViewControllerTextFieldBackground@2x.png */; };
+		247407BC14D6A12200345FB4 /* SSMessageTableViewCellBackgroundBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 247407AE14D6A12200345FB4 /* SSMessageTableViewCellBackgroundBlue.png */; };
+		247407BD14D6A12200345FB4 /* SSMessageTableViewCellBackgroundBlue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 247407AF14D6A12200345FB4 /* SSMessageTableViewCellBackgroundBlue@2x.png */; };
+		247407BE14D6A12200345FB4 /* SSMessageTableViewCellBackgroundClear.png in Resources */ = {isa = PBXBuildFile; fileRef = 247407B014D6A12200345FB4 /* SSMessageTableViewCellBackgroundClear.png */; };
+		247407BF14D6A12200345FB4 /* SSMessageTableViewCellBackgroundClear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 247407B114D6A12200345FB4 /* SSMessageTableViewCellBackgroundClear@2x.png */; };
+		247407C014D6A12200345FB4 /* SSMessageTableViewCellBackgroundGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 247407B214D6A12200345FB4 /* SSMessageTableViewCellBackgroundGreen.png */; };
+		247407C114D6A12200345FB4 /* SSMessageTableViewCellBackgroundGreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 247407B314D6A12200345FB4 /* SSMessageTableViewCellBackgroundGreen@2x.png */; };
 		DF00B88314C9956E008A891E /* tableviewheader_ring@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF00B88214C9956E008A891E /* tableviewheader_ring@2x.png */; };
 		DF00B88514C99660008A891E /* tableviewheader_ring_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF00B88414C99660008A891E /* tableviewheader_ring_selected@2x.png */; };
 		DF00B88714C9977B008A891E /* tableviewheader_facetime_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF00B88614C9977B008A891E /* tableviewheader_facetime_selected@2x.png */; };
@@ -21,8 +40,6 @@
 		DF0C959F14D5BDCE00FA3F4F /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF0C959D14D5BDCE00FA3F4F /* Icon@2x.png */; };
 		DF0C95A114D5BE7C00FA3F4F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DF0C95A014D5BE7C00FA3F4F /* Icon.png */; };
 		DF0C95A314D5BE8000FA3F4F /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF0C95A214D5BE8000FA3F4F /* Icon@2x.png */; };
-		DF10E60614D1D28D00146C28 /* SSMessagesViewControllerSendButtonBackgroundGreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF10E60514D1D28D00146C28 /* SSMessagesViewControllerSendButtonBackgroundGreen@2x.png */; };
-		DF10E60914D1D5D900146C28 /* SSMessagesViewControllerCameraButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF10E60814D1D5D800146C28 /* SSMessagesViewControllerCameraButton@2x.png */; };
 		DF10E60B14D1E9ED00146C28 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF10E60A14D1E9ED00146C28 /* iAd.framework */; };
 		DFDA981314C5CC280082F911 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFDA981214C5CC280082F911 /* UIKit.framework */; };
 		DFDA981514C5CC280082F911 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFDA981414C5CC280082F911 /* Foundation.framework */; };
@@ -34,21 +51,6 @@
 		DFDA982914C5CC280082F911 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDA982814C5CC280082F911 /* DetailViewController.m */; };
 		DFDA982C14C5CC280082F911 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDA982A14C5CC280082F911 /* MasterViewController.xib */; };
 		DFDA982F14C5CC280082F911 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDA982D14C5CC280082F911 /* DetailViewController.xib */; };
-		DFDA984014C5CC5C0082F911 /* SSMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDA983714C5CC5C0082F911 /* SSMessagesViewController.m */; };
-		DFDA984114C5CC5C0082F911 /* SSMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDA983914C5CC5C0082F911 /* SSMessageTableViewCell.m */; };
-		DFDA984214C5CC5C0082F911 /* SSMessageTableViewCellBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDA983B14C5CC5C0082F911 /* SSMessageTableViewCellBubbleView.m */; };
-		DFDA984314C5CC5C0082F911 /* SSDrawingUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDA983D14C5CC5C0082F911 /* SSDrawingUtilities.m */; };
-		DFDA984414C5CC5C0082F911 /* SSTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDA983F14C5CC5C0082F911 /* SSTextField.m */; };
-		DFDA985014C5CC6A0082F911 /* SSMessagesViewControllerInputBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = DFDA984614C5CC6A0082F911 /* SSMessagesViewControllerInputBackground.png */; };
-		DFDA985114C5CC6A0082F911 /* SSMessagesViewControllerInputBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFDA984714C5CC6A0082F911 /* SSMessagesViewControllerInputBackground@2x.png */; };
-		DFDA985214C5CC6A0082F911 /* SSMessagesViewControllerSendButtonBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = DFDA984814C5CC6A0082F911 /* SSMessagesViewControllerSendButtonBackground.png */; };
-		DFDA985314C5CC6A0082F911 /* SSMessagesViewControllerSendButtonBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFDA984914C5CC6A0082F911 /* SSMessagesViewControllerSendButtonBackground@2x.png */; };
-		DFDA985414C5CC6A0082F911 /* SSMessagesViewControllerTextFieldBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = DFDA984A14C5CC6A0082F911 /* SSMessagesViewControllerTextFieldBackground.png */; };
-		DFDA985514C5CC6A0082F911 /* SSMessagesViewControllerTextFieldBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFDA984B14C5CC6A0082F911 /* SSMessagesViewControllerTextFieldBackground@2x.png */; };
-		DFDA985614C5CC6A0082F911 /* SSMessageTableViewCellBackgroundClear.png in Resources */ = {isa = PBXBuildFile; fileRef = DFDA984C14C5CC6A0082F911 /* SSMessageTableViewCellBackgroundClear.png */; };
-		DFDA985714C5CC6A0082F911 /* SSMessageTableViewCellBackgroundClear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFDA984D14C5CC6A0082F911 /* SSMessageTableViewCellBackgroundClear@2x.png */; };
-		DFDA985814C5CC6A0082F911 /* SSMessageTableViewCellBackgroundGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = DFDA984E14C5CC6A0082F911 /* SSMessageTableViewCellBackgroundGreen.png */; };
-		DFDA985914C5CC6A0082F911 /* SSMessageTableViewCellBackgroundGreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFDA984F14C5CC6A0082F911 /* SSMessageTableViewCellBackgroundGreen@2x.png */; };
 		DFDA985C14C5CCFB0082F911 /* SL_SMS.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDA985B14C5CCFB0082F911 /* SL_SMS.m */; };
 		DFDA985F14C5CD390082F911 /* SMS.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDA985E14C5CD390082F911 /* SMS.m */; };
 		DFDA986514C5DA680082F911 /* SSMessagesTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDA986314C5DA660082F911 /* SSMessagesTableHeaderView.m */; };
@@ -58,6 +60,30 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2474075D14D6A0D800345FB4 /* SSDrawingUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDrawingUtilities.h; sourceTree = "<group>"; };
+		2474075E14D6A0D800345FB4 /* SSDrawingUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDrawingUtilities.m; sourceTree = "<group>"; };
+		2474075F14D6A0D800345FB4 /* SSMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMessagesViewController.h; sourceTree = "<group>"; };
+		2474076014D6A0D800345FB4 /* SSMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMessagesViewController.m; sourceTree = "<group>"; };
+		2474076114D6A0D800345FB4 /* SSMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMessageTableViewCell.h; sourceTree = "<group>"; };
+		2474076214D6A0D800345FB4 /* SSMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMessageTableViewCell.m; sourceTree = "<group>"; };
+		2474076314D6A0D800345FB4 /* SSMessageTableViewCellBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMessageTableViewCellBubbleView.h; sourceTree = "<group>"; };
+		2474076414D6A0D800345FB4 /* SSMessageTableViewCellBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMessageTableViewCellBubbleView.m; sourceTree = "<group>"; };
+		2474076514D6A0D800345FB4 /* SSTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSTextField.h; sourceTree = "<group>"; };
+		2474076614D6A0D800345FB4 /* SSTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTextField.m; sourceTree = "<group>"; };
+		247407A614D6A12200345FB4 /* SSMessagesViewControllerCameraButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SSMessagesViewControllerCameraButton@2x.png"; sourceTree = "<group>"; };
+		247407A714D6A12200345FB4 /* SSMessagesViewControllerInputBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SSMessagesViewControllerInputBackground.png; sourceTree = "<group>"; };
+		247407A814D6A12200345FB4 /* SSMessagesViewControllerInputBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SSMessagesViewControllerInputBackground@2x.png"; sourceTree = "<group>"; };
+		247407A914D6A12200345FB4 /* SSMessagesViewControllerSendButtonBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SSMessagesViewControllerSendButtonBackground.png; sourceTree = "<group>"; };
+		247407AA14D6A12200345FB4 /* SSMessagesViewControllerSendButtonBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SSMessagesViewControllerSendButtonBackground@2x.png"; sourceTree = "<group>"; };
+		247407AB14D6A12200345FB4 /* SSMessagesViewControllerSendButtonBackgroundGreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SSMessagesViewControllerSendButtonBackgroundGreen@2x.png"; sourceTree = "<group>"; };
+		247407AC14D6A12200345FB4 /* SSMessagesViewControllerTextFieldBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SSMessagesViewControllerTextFieldBackground.png; sourceTree = "<group>"; };
+		247407AD14D6A12200345FB4 /* SSMessagesViewControllerTextFieldBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SSMessagesViewControllerTextFieldBackground@2x.png"; sourceTree = "<group>"; };
+		247407AE14D6A12200345FB4 /* SSMessageTableViewCellBackgroundBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SSMessageTableViewCellBackgroundBlue.png; sourceTree = "<group>"; };
+		247407AF14D6A12200345FB4 /* SSMessageTableViewCellBackgroundBlue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SSMessageTableViewCellBackgroundBlue@2x.png"; sourceTree = "<group>"; };
+		247407B014D6A12200345FB4 /* SSMessageTableViewCellBackgroundClear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SSMessageTableViewCellBackgroundClear.png; sourceTree = "<group>"; };
+		247407B114D6A12200345FB4 /* SSMessageTableViewCellBackgroundClear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SSMessageTableViewCellBackgroundClear@2x.png"; sourceTree = "<group>"; };
+		247407B214D6A12200345FB4 /* SSMessageTableViewCellBackgroundGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SSMessageTableViewCellBackgroundGreen.png; sourceTree = "<group>"; };
+		247407B314D6A12200345FB4 /* SSMessageTableViewCellBackgroundGreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SSMessageTableViewCellBackgroundGreen@2x.png"; sourceTree = "<group>"; };
 		DF00B88214C9956E008A891E /* tableviewheader_ring@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableviewheader_ring@2x.png"; sourceTree = "<group>"; };
 		DF00B88414C99660008A891E /* tableviewheader_ring_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableviewheader_ring_selected@2x.png"; sourceTree = "<group>"; };
 		DF00B88614C9977B008A891E /* tableviewheader_facetime_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableviewheader_facetime_selected@2x.png"; sourceTree = "<group>"; };
@@ -73,8 +99,6 @@
 		DF0C959D14D5BDCE00FA3F4F /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		DF0C95A014D5BE7C00FA3F4F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		DF0C95A214D5BE8000FA3F4F /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
-		DF10E60514D1D28D00146C28 /* SSMessagesViewControllerSendButtonBackgroundGreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SSMessagesViewControllerSendButtonBackgroundGreen@2x.png"; path = "../../Libraries/ssmessagesviewcontroller/Images/SSMessagesViewControllerSendButtonBackgroundGreen@2x.png"; sourceTree = "<group>"; };
-		DF10E60814D1D5D800146C28 /* SSMessagesViewControllerCameraButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SSMessagesViewControllerCameraButton@2x.png"; path = "../../Libraries/ssmessagesviewcontroller/Images/SSMessagesViewControllerCameraButton@2x.png"; sourceTree = "<group>"; };
 		DF10E60A14D1E9ED00146C28 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		DFDA980E14C5CC280082F911 /* SL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFDA981214C5CC280082F911 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -92,26 +116,6 @@
 		DFDA982814C5CC280082F911 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		DFDA982B14C5CC280082F911 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController.xib; sourceTree = "<group>"; };
 		DFDA982E14C5CC280082F911 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController.xib; sourceTree = "<group>"; };
-		DFDA983614C5CC5C0082F911 /* SSMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSMessagesViewController.h; path = ../../Libraries/ssmessagesviewcontroller/Classes/SSMessagesViewController.h; sourceTree = "<group>"; };
-		DFDA983714C5CC5C0082F911 /* SSMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSMessagesViewController.m; path = ../../Libraries/ssmessagesviewcontroller/Classes/SSMessagesViewController.m; sourceTree = "<group>"; };
-		DFDA983814C5CC5C0082F911 /* SSMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSMessageTableViewCell.h; path = ../../Libraries/ssmessagesviewcontroller/Classes/SSMessageTableViewCell.h; sourceTree = "<group>"; };
-		DFDA983914C5CC5C0082F911 /* SSMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSMessageTableViewCell.m; path = ../../Libraries/ssmessagesviewcontroller/Classes/SSMessageTableViewCell.m; sourceTree = "<group>"; };
-		DFDA983A14C5CC5C0082F911 /* SSMessageTableViewCellBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSMessageTableViewCellBubbleView.h; path = ../../Libraries/ssmessagesviewcontroller/Classes/SSMessageTableViewCellBubbleView.h; sourceTree = "<group>"; };
-		DFDA983B14C5CC5C0082F911 /* SSMessageTableViewCellBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSMessageTableViewCellBubbleView.m; path = ../../Libraries/ssmessagesviewcontroller/Classes/SSMessageTableViewCellBubbleView.m; sourceTree = "<group>"; };
-		DFDA983C14C5CC5C0082F911 /* SSDrawingUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSDrawingUtilities.h; path = ../../Libraries/ssmessagesviewcontroller/Classes/SSDrawingUtilities.h; sourceTree = "<group>"; };
-		DFDA983D14C5CC5C0082F911 /* SSDrawingUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSDrawingUtilities.m; path = ../../Libraries/ssmessagesviewcontroller/Classes/SSDrawingUtilities.m; sourceTree = "<group>"; };
-		DFDA983E14C5CC5C0082F911 /* SSTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSTextField.h; path = ../../Libraries/ssmessagesviewcontroller/Classes/SSTextField.h; sourceTree = "<group>"; };
-		DFDA983F14C5CC5C0082F911 /* SSTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSTextField.m; path = ../../Libraries/ssmessagesviewcontroller/Classes/SSTextField.m; sourceTree = "<group>"; };
-		DFDA984614C5CC6A0082F911 /* SSMessagesViewControllerInputBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SSMessagesViewControllerInputBackground.png; path = ../../Libraries/ssmessagesviewcontroller/Images/SSMessagesViewControllerInputBackground.png; sourceTree = "<group>"; };
-		DFDA984714C5CC6A0082F911 /* SSMessagesViewControllerInputBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SSMessagesViewControllerInputBackground@2x.png"; path = "../../Libraries/ssmessagesviewcontroller/Images/SSMessagesViewControllerInputBackground@2x.png"; sourceTree = "<group>"; };
-		DFDA984814C5CC6A0082F911 /* SSMessagesViewControllerSendButtonBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SSMessagesViewControllerSendButtonBackground.png; path = ../../Libraries/ssmessagesviewcontroller/Images/SSMessagesViewControllerSendButtonBackground.png; sourceTree = "<group>"; };
-		DFDA984914C5CC6A0082F911 /* SSMessagesViewControllerSendButtonBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SSMessagesViewControllerSendButtonBackground@2x.png"; path = "../../Libraries/ssmessagesviewcontroller/Images/SSMessagesViewControllerSendButtonBackground@2x.png"; sourceTree = "<group>"; };
-		DFDA984A14C5CC6A0082F911 /* SSMessagesViewControllerTextFieldBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SSMessagesViewControllerTextFieldBackground.png; path = ../../Libraries/ssmessagesviewcontroller/Images/SSMessagesViewControllerTextFieldBackground.png; sourceTree = "<group>"; };
-		DFDA984B14C5CC6A0082F911 /* SSMessagesViewControllerTextFieldBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SSMessagesViewControllerTextFieldBackground@2x.png"; path = "../../Libraries/ssmessagesviewcontroller/Images/SSMessagesViewControllerTextFieldBackground@2x.png"; sourceTree = "<group>"; };
-		DFDA984C14C5CC6A0082F911 /* SSMessageTableViewCellBackgroundClear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SSMessageTableViewCellBackgroundClear.png; path = ../../Libraries/ssmessagesviewcontroller/Images/SSMessageTableViewCellBackgroundClear.png; sourceTree = "<group>"; };
-		DFDA984D14C5CC6A0082F911 /* SSMessageTableViewCellBackgroundClear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SSMessageTableViewCellBackgroundClear@2x.png"; path = "../../Libraries/ssmessagesviewcontroller/Images/SSMessageTableViewCellBackgroundClear@2x.png"; sourceTree = "<group>"; };
-		DFDA984E14C5CC6A0082F911 /* SSMessageTableViewCellBackgroundGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SSMessageTableViewCellBackgroundGreen.png; path = ../../Libraries/ssmessagesviewcontroller/Images/SSMessageTableViewCellBackgroundGreen.png; sourceTree = "<group>"; };
-		DFDA984F14C5CC6A0082F911 /* SSMessageTableViewCellBackgroundGreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SSMessageTableViewCellBackgroundGreen@2x.png"; path = "../../Libraries/ssmessagesviewcontroller/Images/SSMessageTableViewCellBackgroundGreen@2x.png"; sourceTree = "<group>"; };
 		DFDA985A14C5CCFB0082F911 /* SL_SMS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SL_SMS.h; sourceTree = "<group>"; };
 		DFDA985B14C5CCFB0082F911 /* SL_SMS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SL_SMS.m; sourceTree = "<group>"; };
 		DFDA985D14C5CD390082F911 /* SMS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMS.h; sourceTree = "<group>"; };
@@ -139,6 +143,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2474075C14D6A0D800345FB4 /* SSMessagesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				247407A514D6A12200345FB4 /* Images */,
+				2474075D14D6A0D800345FB4 /* SSDrawingUtilities.h */,
+				2474075E14D6A0D800345FB4 /* SSDrawingUtilities.m */,
+				2474075F14D6A0D800345FB4 /* SSMessagesViewController.h */,
+				2474076014D6A0D800345FB4 /* SSMessagesViewController.m */,
+				2474076114D6A0D800345FB4 /* SSMessageTableViewCell.h */,
+				2474076214D6A0D800345FB4 /* SSMessageTableViewCell.m */,
+				2474076314D6A0D800345FB4 /* SSMessageTableViewCellBubbleView.h */,
+				2474076414D6A0D800345FB4 /* SSMessageTableViewCellBubbleView.m */,
+				2474076514D6A0D800345FB4 /* SSTextField.h */,
+				2474076614D6A0D800345FB4 /* SSTextField.m */,
+			);
+			name = SSMessagesViewController;
+			path = ../ssmessagesviewcontroller/Classes;
+			sourceTree = "<group>";
+		};
+		247407A514D6A12200345FB4 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				247407A614D6A12200345FB4 /* SSMessagesViewControllerCameraButton@2x.png */,
+				247407A714D6A12200345FB4 /* SSMessagesViewControllerInputBackground.png */,
+				247407A814D6A12200345FB4 /* SSMessagesViewControllerInputBackground@2x.png */,
+				247407A914D6A12200345FB4 /* SSMessagesViewControllerSendButtonBackground.png */,
+				247407AA14D6A12200345FB4 /* SSMessagesViewControllerSendButtonBackground@2x.png */,
+				247407AB14D6A12200345FB4 /* SSMessagesViewControllerSendButtonBackgroundGreen@2x.png */,
+				247407AC14D6A12200345FB4 /* SSMessagesViewControllerTextFieldBackground.png */,
+				247407AD14D6A12200345FB4 /* SSMessagesViewControllerTextFieldBackground@2x.png */,
+				247407AE14D6A12200345FB4 /* SSMessageTableViewCellBackgroundBlue.png */,
+				247407AF14D6A12200345FB4 /* SSMessageTableViewCellBackgroundBlue@2x.png */,
+				247407B014D6A12200345FB4 /* SSMessageTableViewCellBackgroundClear.png */,
+				247407B114D6A12200345FB4 /* SSMessageTableViewCellBackgroundClear@2x.png */,
+				247407B214D6A12200345FB4 /* SSMessageTableViewCellBackgroundGreen.png */,
+				247407B314D6A12200345FB4 /* SSMessageTableViewCellBackgroundGreen@2x.png */,
+			);
+			name = Images;
+			path = ssmessagesviewcontroller/Images;
+			sourceTree = SOURCE_ROOT;
+		};
 		DF00B88014C99564008A891E /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,8 +232,9 @@
 		DFDA981814C5CC280082F911 /* SL */ = {
 			isa = PBXGroup;
 			children = (
+				2474075C14D6A0D800345FB4 /* SSMessagesViewController */,
 				DF00B88014C99564008A891E /* Images */,
-				DFDA983514C5CC4D0082F911 /* SSMessagesViewController */,
+				DFDA983514C5CC4D0082F911 /* SSMessagesViewController Additions */,
 				DFDA982114C5CC280082F911 /* AppDelegate.h */,
 				DFDA982214C5CC280082F911 /* AppDelegate.m */,
 				DFDA982414C5CC280082F911 /* MasterViewController.h */,
@@ -222,20 +268,9 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		DFDA983514C5CC4D0082F911 /* SSMessagesViewController */ = {
+		DFDA983514C5CC4D0082F911 /* SSMessagesViewController Additions */ = {
 			isa = PBXGroup;
 			children = (
-				DFDA984514C5CC5F0082F911 /* Images */,
-				DFDA983614C5CC5C0082F911 /* SSMessagesViewController.h */,
-				DFDA983714C5CC5C0082F911 /* SSMessagesViewController.m */,
-				DFDA983814C5CC5C0082F911 /* SSMessageTableViewCell.h */,
-				DFDA983914C5CC5C0082F911 /* SSMessageTableViewCell.m */,
-				DFDA983A14C5CC5C0082F911 /* SSMessageTableViewCellBubbleView.h */,
-				DFDA983B14C5CC5C0082F911 /* SSMessageTableViewCellBubbleView.m */,
-				DFDA983C14C5CC5C0082F911 /* SSDrawingUtilities.h */,
-				DFDA983D14C5CC5C0082F911 /* SSDrawingUtilities.m */,
-				DFDA983E14C5CC5C0082F911 /* SSTextField.h */,
-				DFDA983F14C5CC5C0082F911 /* SSTextField.m */,
 				DFDA986214C5DA660082F911 /* SSMessagesTableHeaderView.h */,
 				DFDA986314C5DA660082F911 /* SSMessagesTableHeaderView.m */,
 				DFDA986414C5DA670082F911 /* SSMessagesTableHeaderView.xib */,
@@ -243,26 +278,7 @@
 				DFDA990F14C62E0B0082F911 /* SSMessagesTableHeaderDateView.m */,
 				DFDA991014C62E0C0082F911 /* SSMessagesTableHeaderDateView.xib */,
 			);
-			name = SSMessagesViewController;
-			sourceTree = "<group>";
-		};
-		DFDA984514C5CC5F0082F911 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				DF10E60814D1D5D800146C28 /* SSMessagesViewControllerCameraButton@2x.png */,
-				DFDA984614C5CC6A0082F911 /* SSMessagesViewControllerInputBackground.png */,
-				DFDA984714C5CC6A0082F911 /* SSMessagesViewControllerInputBackground@2x.png */,
-				DFDA984814C5CC6A0082F911 /* SSMessagesViewControllerSendButtonBackground.png */,
-				DFDA984914C5CC6A0082F911 /* SSMessagesViewControllerSendButtonBackground@2x.png */,
-				DF10E60514D1D28D00146C28 /* SSMessagesViewControllerSendButtonBackgroundGreen@2x.png */,
-				DFDA984A14C5CC6A0082F911 /* SSMessagesViewControllerTextFieldBackground.png */,
-				DFDA984B14C5CC6A0082F911 /* SSMessagesViewControllerTextFieldBackground@2x.png */,
-				DFDA984C14C5CC6A0082F911 /* SSMessageTableViewCellBackgroundClear.png */,
-				DFDA984D14C5CC6A0082F911 /* SSMessageTableViewCellBackgroundClear@2x.png */,
-				DFDA984E14C5CC6A0082F911 /* SSMessageTableViewCellBackgroundGreen.png */,
-				DFDA984F14C5CC6A0082F911 /* SSMessageTableViewCellBackgroundGreen@2x.png */,
-			);
-			name = Images;
+			name = "SSMessagesViewController Additions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,16 +334,6 @@
 				DFDA981D14C5CC280082F911 /* InfoPlist.strings in Resources */,
 				DFDA982C14C5CC280082F911 /* MasterViewController.xib in Resources */,
 				DFDA982F14C5CC280082F911 /* DetailViewController.xib in Resources */,
-				DFDA985014C5CC6A0082F911 /* SSMessagesViewControllerInputBackground.png in Resources */,
-				DFDA985114C5CC6A0082F911 /* SSMessagesViewControllerInputBackground@2x.png in Resources */,
-				DFDA985214C5CC6A0082F911 /* SSMessagesViewControllerSendButtonBackground.png in Resources */,
-				DFDA985314C5CC6A0082F911 /* SSMessagesViewControllerSendButtonBackground@2x.png in Resources */,
-				DFDA985414C5CC6A0082F911 /* SSMessagesViewControllerTextFieldBackground.png in Resources */,
-				DFDA985514C5CC6A0082F911 /* SSMessagesViewControllerTextFieldBackground@2x.png in Resources */,
-				DFDA985614C5CC6A0082F911 /* SSMessageTableViewCellBackgroundClear.png in Resources */,
-				DFDA985714C5CC6A0082F911 /* SSMessageTableViewCellBackgroundClear@2x.png in Resources */,
-				DFDA985814C5CC6A0082F911 /* SSMessageTableViewCellBackgroundGreen.png in Resources */,
-				DFDA985914C5CC6A0082F911 /* SSMessageTableViewCellBackgroundGreen@2x.png in Resources */,
 				DFDA986614C5DA680082F911 /* SSMessagesTableHeaderView.xib in Resources */,
 				DFDA991214C62E0D0082F911 /* SSMessagesTableHeaderDateView.xib in Resources */,
 				DF00B88314C9956E008A891E /* tableviewheader_ring@2x.png in Resources */,
@@ -339,12 +345,24 @@
 				DF00B88F14C997D1008A891E /* tableheaderview_message@2x.png in Resources */,
 				DF00B89114C99831008A891E /* tableviewheader_add_selected@2x.png in Resources */,
 				DF00B89614C9A04A008A891E /* LinksDetailViewController.xib in Resources */,
-				DF10E60614D1D28D00146C28 /* SSMessagesViewControllerSendButtonBackgroundGreen@2x.png in Resources */,
-				DF10E60914D1D5D900146C28 /* SSMessagesViewControllerCameraButton@2x.png in Resources */,
 				DF0C959E14D5BDCE00FA3F4F /* Icon.png in Resources */,
 				DF0C959F14D5BDCE00FA3F4F /* Icon@2x.png in Resources */,
 				DF0C95A114D5BE7C00FA3F4F /* Icon.png in Resources */,
 				DF0C95A314D5BE8000FA3F4F /* Icon@2x.png in Resources */,
+				247407B414D6A12200345FB4 /* SSMessagesViewControllerCameraButton@2x.png in Resources */,
+				247407B514D6A12200345FB4 /* SSMessagesViewControllerInputBackground.png in Resources */,
+				247407B614D6A12200345FB4 /* SSMessagesViewControllerInputBackground@2x.png in Resources */,
+				247407B714D6A12200345FB4 /* SSMessagesViewControllerSendButtonBackground.png in Resources */,
+				247407B814D6A12200345FB4 /* SSMessagesViewControllerSendButtonBackground@2x.png in Resources */,
+				247407B914D6A12200345FB4 /* SSMessagesViewControllerSendButtonBackgroundGreen@2x.png in Resources */,
+				247407BA14D6A12200345FB4 /* SSMessagesViewControllerTextFieldBackground.png in Resources */,
+				247407BB14D6A12200345FB4 /* SSMessagesViewControllerTextFieldBackground@2x.png in Resources */,
+				247407BC14D6A12200345FB4 /* SSMessageTableViewCellBackgroundBlue.png in Resources */,
+				247407BD14D6A12200345FB4 /* SSMessageTableViewCellBackgroundBlue@2x.png in Resources */,
+				247407BE14D6A12200345FB4 /* SSMessageTableViewCellBackgroundClear.png in Resources */,
+				247407BF14D6A12200345FB4 /* SSMessageTableViewCellBackgroundClear@2x.png in Resources */,
+				247407C014D6A12200345FB4 /* SSMessageTableViewCellBackgroundGreen.png in Resources */,
+				247407C114D6A12200345FB4 /* SSMessageTableViewCellBackgroundGreen@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,16 +377,16 @@
 				DFDA982314C5CC280082F911 /* AppDelegate.m in Sources */,
 				DFDA982614C5CC280082F911 /* MasterViewController.m in Sources */,
 				DFDA982914C5CC280082F911 /* DetailViewController.m in Sources */,
-				DFDA984014C5CC5C0082F911 /* SSMessagesViewController.m in Sources */,
-				DFDA984114C5CC5C0082F911 /* SSMessageTableViewCell.m in Sources */,
-				DFDA984214C5CC5C0082F911 /* SSMessageTableViewCellBubbleView.m in Sources */,
-				DFDA984314C5CC5C0082F911 /* SSDrawingUtilities.m in Sources */,
-				DFDA984414C5CC5C0082F911 /* SSTextField.m in Sources */,
 				DFDA985C14C5CCFB0082F911 /* SL_SMS.m in Sources */,
 				DFDA985F14C5CD390082F911 /* SMS.m in Sources */,
 				DFDA986514C5DA680082F911 /* SSMessagesTableHeaderView.m in Sources */,
 				DFDA991114C62E0D0082F911 /* SSMessagesTableHeaderDateView.m in Sources */,
 				DF00B89514C9A04A008A891E /* LinksDetailViewController.m in Sources */,
+				2474078914D6A0D900345FB4 /* SSDrawingUtilities.m in Sources */,
+				2474078A14D6A0D900345FB4 /* SSMessagesViewController.m in Sources */,
+				2474078B14D6A0D900345FB4 /* SSMessageTableViewCell.m in Sources */,
+				2474078C14D6A0D900345FB4 /* SSMessageTableViewCellBubbleView.m in Sources */,
+				2474078D14D6A0D900345FB4 /* SSTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

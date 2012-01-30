@@ -12,13 +12,9 @@
 @class DetailViewController;
 
 @interface MasterViewController : UIViewController <ADBannerViewDelegate> {
+    NSArray *zoneSwitches;
     NSMutableArray *zones;
-    
-    IBOutlet UISwitch *reduced;
-    
-    IBOutlet UISwitch *aZone;
-    IBOutlet UISwitch *bZone;
-    IBOutlet UISwitch *cZone;
+    UISwitch *reduced;
     
     id _adBannerView;
 }
@@ -29,9 +25,7 @@
 
 @property (nonatomic, retain) IBOutlet UISwitch *reduced;
 
-@property (nonatomic, retain) IBOutlet UISwitch *aZone;
-@property (nonatomic, retain) IBOutlet UISwitch *bZone;
-@property (nonatomic, retain) IBOutlet UISwitch *cZone;
+@property (nonatomic, retain) IBOutletCollection(UISwitch) NSArray *zoneSwitches;
 
 @property (nonatomic, retain) id adBannerView;
 

@@ -7,11 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SSMessagesViewController.h"
+#import "SSMessagesTableHeaderDateView.h"
+#import "SMS.h"
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : SSMessagesViewController {
+    SMS *sms;
+    SSMessagesTableHeaderDateView *tableHeaderDateView;
+}
 
-@property (strong, nonatomic) id detailItem;
+@property (nonatomic, retain) SMS *sms;
+@property (nonatomic, retain) SSMessagesTableHeaderDateView *tableHeaderDateView;
 
-@property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+- (void)setSms:(SMS *)sms_;
+
+- (IBAction)call:(id)sender;
+- (IBAction)facetime:(id)sender;
+- (IBAction)addContact:(id)sender;
 
 @end

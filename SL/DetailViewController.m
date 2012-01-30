@@ -7,43 +7,49 @@
 //
 
 #import "DetailViewController.h"
-
-@interface DetailViewController ()
-- (void)configureView;
-@end
+#import "SSMessageTableViewCellBubbleView.h"
+#import "SSMessagesTableHeaderView.h"
+#import "SSMessagesTableHeaderDateView.h"
+#import "LinksDetailViewController.h"
 
 @implementation DetailViewController
 
-@synthesize detailItem = _detailItem;
-@synthesize detailDescriptionLabel = _detailDescriptionLabel;
+@synthesize sms, tableHeaderDateView;
 
 - (void)dealloc
 {
-    [_detailItem release];
-    [_detailDescriptionLabel release];
     [super dealloc];
+}
+
+- (id)init {
+    self = [super init];
+    
+    UIViewController *viewController = [[UIViewController alloc] init];
+    
+    SSMessagesTableHeaderView *tableHeaderView = [[SSMessagesTableHeaderView alloc] init];
+    tableHeaderDateView = [[SSMessagesTableHeaderDateView alloc] init];
+    
+    [tableHeaderDateView.view setFrame:CGRectMake(0, tableHeaderView.view.frame.size.height, tableHeaderDateView.view.frame.size.width, tableHeaderDateView.view.frame.size.height)];
+    
+    [viewController.view setFrame:CGRectMake(0, 0, tableHeaderView.view.frame.size.width, tableHeaderView.view.frame.size.height + tableHeaderDateView.view.frame.size.height)];
+    
+    [viewController.view addSubview:tableHeaderView.view];
+    [viewController.view addSubview:tableHeaderDateView.view];
+    
+    [super setTableHeaderView:viewController.view];
+    
+    [tableHeaderView release];
+    [viewController release];
+    
+    return self;
 }
 
 #pragma mark - Managing the detail item
 
-- (void)setDetailItem:(id)newDetailItem
-{
-    if (_detailItem != newDetailItem) {
-        [_detailItem release]; 
-        _detailItem = [newDetailItem retain]; 
-
-        // Update the view.
-        [self configureView];
-    }
-}
-
-- (void)configureView
-{
-    // Update the user interface for the detail item.
-
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
-    }
+- (void)setSms:(SMS *)sms_ {
+    [self setTitle:[sms_ sender]];
+    //[super setDate:[sms_ date]];
+    sms = sms_;
 }
 
 - (void)didReceiveMemoryWarning
@@ -58,7 +64,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    [self configureView];
+    [tableHeaderDateView setLabelText:[sms date]];
+    
+    UIBarButtonItem *editButton = [[UIBarButtonItem alloc] initWithTitle:@"Ändra" style:UIBarButtonItemStyleBordered target:self action:@selector(editMessage)];
+    self.navigationItem.rightBarButtonItem = editButton;
+    [editButton release];
+}
+
+- (void)editMessage {
+    [self setEditing:([self isEditing] ? NO : YES) animated:YES];
+    NSLog(@"Editing: %d", [self isEditing]);
 }
 
 - (void)viewDidUnload
@@ -90,17 +105,39 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    // Return YES for supported orientations
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
+		return interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown;
+	}
+	return YES;
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        self.title = NSLocalizedString(@"Detail", @"Detail");
-    }
-    return self;
+
+#pragma mark SSMessagesViewController
+
+- (SSMessageStyle)messageStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
+	if (indexPath.row % 2) {
+		return SSMessageStyleRight;
+	}
+	return SSMessageStyleLeft;
 }
-							
+
+
+- (NSString *)textForRowAtIndexPath:(NSIndexPath *)indexPath {
+	return [sms message];
+}
+
+#pragma mark UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 1;
+}
+
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
+    LinksDetailViewController *linksDetailViewController = [[LinksDetailViewController alloc] initWithStyle:UITableViewStyleGrouped];
+        
+    [linksDetailViewController setLinks:[(SSMessageTableViewCell *)[tableView cellForRowAtIndexPath:indexPath] links]];
+    
+    [self.navigationController pushViewController:linksDetailViewController animated:YES];
+}
+	
 @end

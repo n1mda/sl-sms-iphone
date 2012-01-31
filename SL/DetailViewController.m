@@ -29,6 +29,8 @@
     SSMessagesTableHeaderView *tableHeaderView = [[SSMessagesTableHeaderView alloc] init];
     tableHeaderDateView = [[SSMessagesTableHeaderDateView alloc] init];
     
+    [tableHeaderView setDelegate:self];
+    
     [tableHeaderDateView.view setFrame:CGRectMake(0, tableHeaderView.view.frame.size.height, tableHeaderDateView.view.frame.size.width, tableHeaderDateView.view.frame.size.height)];
     
     [viewController.view setFrame:CGRectMake(0, 0, tableHeaderView.view.frame.size.width, tableHeaderView.view.frame.size.height + tableHeaderDateView.view.frame.size.height)];
@@ -38,7 +40,6 @@
     
     [super setTableHeaderView:viewController.view];
     
-    [tableHeaderView release];
     [viewController release];
     
     return self;
@@ -139,5 +140,75 @@
     
     [self.navigationController pushViewController:linksDetailViewController animated:YES];
 }
+
+#pragma mark Header View Delegate
+
+- (void)call {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@", [sms sender]]]];
+}
+
+- (void)facetime {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"facetime://%@", [sms sender]]]];
+}
+
+- (void)addToContact {
+    UIActionSheet *popupQuery = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Avbryt" destructiveButtonTitle:nil otherButtonTitles:@"Skapa ny kontakt", @"Lägg till i befintlig kontakt", nil];
+    popupQuery.actionSheetStyle = UIActionSheetStyleDefault;
+    popupQuery.tag = 1;
+    
+    [popupQuery showInView:self.view];
+    [popupQuery release];
+}
+
+- (void)addNewContact {
+    // Creating new entry
+    ABAddressBookRef addressBook = ABAddressBookCreate();
+    ABRecordRef person = ABPersonCreate();
+        
+    // Adding phone numbers
+    ABMutableMultiValueRef phoneNumberMultiValue = ABMultiValueCreateMutable(kABMultiStringPropertyType);
+    ABMultiValueAddValueAndLabel(phoneNumberMultiValue, [sms sender], (CFStringRef)@"mobil", NULL);
+    ABRecordSetValue(person, kABPersonPhoneProperty, phoneNumberMultiValue, nil);
+    CFRelease(phoneNumberMultiValue);
+    
+    // Adding person to the address book
+    ABAddressBookAddRecord(addressBook, person, nil);
+    CFRelease(addressBook);
+    
+    // Creating view controller for a new contact
+    ABNewPersonViewController *c = [[ABNewPersonViewController alloc] init];
+    [c setNewPersonViewDelegate:self];
+    [c setDisplayedPerson:person];
+    CFRelease(person);
+    [self.navigationController presentModalViewController:c animated:YES];
+    [c release];
+
+}
+
+- (void)addToExistingContact {
+    
+}
+
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+    
+    if(actionSheet.tag == 1) {
+        switch (buttonIndex) {
+            case 0:
+                // Create new contact
+                [self addNewContact];
+                break;
+            case 1:
+                // Add to existing
+                [self addToExistingContact];
+                break;
+            default:
+                break;
+        }
+    }
+    
+    
+}
+
 	
 @end

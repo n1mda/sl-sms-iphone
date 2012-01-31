@@ -11,13 +11,12 @@
 			<string key="NS.object.0">933</string>
 		</object>
 		<array key="IBDocument.IntegratedClassDependencies">
-			<string>IBUIView</string>
-			<string>IBProxyObject</string>
-			<string>IBUILabel</string>
-			<string>IBUISwitch</string>
-			<string>IBADBannerView</string>
 			<string>IBUITextView</string>
 			<string>IBUIButton</string>
+			<string>IBUISwitch</string>
+			<string>IBUIView</string>
+			<string>IBUILabel</string>
+			<string>IBProxyObject</string>
 		</array>
 		<array key="IBDocument.PluginDependencies">
 			<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -45,7 +44,7 @@
 						<string key="NSFrame">{{90, 326}, {151, 37}}</string>
 						<reference key="NSSuperview" ref="373835710"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="102909365"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:225</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -291,26 +290,6 @@
 							<int key="NSfFlags">16</int>
 						</object>
 					</object>
-					<object class="IBADBannerView" id="102909365">
-						<reference key="NSNextResponder" ref="373835710"/>
-						<int key="NSvFlags">306</int>
-						<string key="NSFrame">{{0, 366}, {320, 50}}</string>
-						<reference key="NSSuperview" ref="373835710"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
-						<string key="NSReuseIdentifierKey">_NS:822</string>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<int key="IBUIContentMode">4</int>
-						<bool key="IBUIMultipleTouchEnabled">YES</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<set class="NSMutableSet" key="IBADRequiredContentSizeIdentifiers">
-							<string>ADBannerContentSize320x50</string>
-						</set>
-						<set key="IBADModernRequiredContentSizeIdentifiers">
-							<string>ADBannerContentSizePortrait</string>
-						</set>
-					</object>
 					<object class="IBUILabel" id="756845324">
 						<reference key="NSNextResponder" ref="373835710"/>
 						<int key="NSvFlags">292</int>
@@ -451,7 +430,6 @@
 							<reference ref="568419517"/>
 							<reference ref="125663847"/>
 							<reference ref="175421591"/>
-							<reference ref="102909365"/>
 							<reference ref="756845324"/>
 							<reference ref="1031802678"/>
 							<reference ref="900305113"/>
@@ -521,11 +499,6 @@
 						<reference key="parent" ref="373835710"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">26</int>
-						<reference key="object" ref="102909365"/>
-						<reference key="parent" ref="373835710"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">27</int>
 						<reference key="object" ref="756845324"/>
 						<reference key="parent" ref="373835710"/>
@@ -552,7 +525,6 @@
 				<string key="17.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="23.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="25.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="26.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="27.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="28.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="6.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>

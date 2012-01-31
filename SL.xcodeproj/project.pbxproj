@@ -41,6 +41,8 @@
 		DF0C95A114D5BE7C00FA3F4F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DF0C95A014D5BE7C00FA3F4F /* Icon.png */; };
 		DF0C95A314D5BE8000FA3F4F /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF0C95A214D5BE8000FA3F4F /* Icon@2x.png */; };
 		DF10E60B14D1E9ED00146C28 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF10E60A14D1E9ED00146C28 /* iAd.framework */; };
+		DF2110FF14D877EB009B4E26 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF2110FE14D877EB009B4E26 /* AddressBookUI.framework */; };
+		DF21110214D878DD009B4E26 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF21110114D878DD009B4E26 /* AddressBook.framework */; };
 		DFDA981314C5CC280082F911 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFDA981214C5CC280082F911 /* UIKit.framework */; };
 		DFDA981514C5CC280082F911 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFDA981414C5CC280082F911 /* Foundation.framework */; };
 		DFDA981714C5CC280082F911 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFDA981614C5CC280082F911 /* CoreGraphics.framework */; };
@@ -100,6 +102,8 @@
 		DF0C95A014D5BE7C00FA3F4F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		DF0C95A214D5BE8000FA3F4F /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		DF10E60A14D1E9ED00146C28 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		DF2110FE14D877EB009B4E26 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		DF21110114D878DD009B4E26 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		DFDA980E14C5CC280082F911 /* SL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFDA981214C5CC280082F911 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DFDA981414C5CC280082F911 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -133,6 +137,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF21110214D878DD009B4E26 /* AddressBook.framework in Frameworks */,
+				DF2110FF14D877EB009B4E26 /* AddressBookUI.framework in Frameworks */,
 				DF10E60B14D1E9ED00146C28 /* iAd.framework in Frameworks */,
 				DFDA981314C5CC280082F911 /* UIKit.framework in Frameworks */,
 				DFDA981514C5CC280082F911 /* Foundation.framework in Frameworks */,
@@ -202,6 +208,8 @@
 		DFDA980314C5CC270082F911 = {
 			isa = PBXGroup;
 			children = (
+				DF21110114D878DD009B4E26 /* AddressBook.framework */,
+				DF2110FE14D877EB009B4E26 /* AddressBookUI.framework */,
 				DF0C95A214D5BE8000FA3F4F /* Icon@2x.png */,
 				DF0C95A014D5BE7C00FA3F4F /* Icon.png */,
 				DF10E60A14D1E9ED00146C28 /* iAd.framework */,
@@ -291,6 +299,7 @@
 				DFDA980A14C5CC280082F911 /* Sources */,
 				DFDA980B14C5CC280082F911 /* Frameworks */,
 				DFDA980C14C5CC280082F911 /* Resources */,
+				DFD35EAF14D75A570073AD9F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -367,6 +376,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DFD35EAF14D75A570073AD9F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export CODESIGN_ALLOCATE=/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ]; then\n/Developer/iphoneentitlements401/gen_entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\ncodesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DFDA980A14C5CC280082F911 /* Sources */ = {
@@ -466,6 +491,7 @@
 		DFDA983314C5CC280082F911 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SL/SL-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
@@ -479,16 +505,14 @@
 		DFDA983414C5CC280082F911 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SL/SL-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "SL/SL-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

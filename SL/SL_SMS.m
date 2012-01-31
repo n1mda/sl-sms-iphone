@@ -125,7 +125,7 @@
     NSString *validMonthStr = [NSString stringWithFormat:@"%02d", [validDateComponents month]];
     NSString *validDayStr = [NSString stringWithFormat:@"%02d", [validDateComponents day]];
     NSString *validHourStr = [NSString stringWithFormat:@"%02d", [validDateComponents hour]];
-    NSString *validMinuteStr = [NSString stringWithFormat:@"%d", [validDateComponents minute]];
+    NSString *validMinuteStr = [NSString stringWithFormat:@"%02d", [validDateComponents minute]];
         
     NSString *checksum = [NSString stringWithFormat:@"%@%@%@%@%d%d%d%@", orderHour, orderMinute, monthChar, orderDay, randomint3, randomint1-3, randomint4, randomString];
     NSLog(@"Checksum: %@", checksum);
@@ -146,7 +146,7 @@
                               priceText2, price, checksum];
     
     [sms setMessage:returnString];
-    [sms setSender:[NSString stringWithFormat:@"72-150 %d%d %d%d", randomint1, randomint2, randomint4, randomint4]];
+    [sms setSender:[NSString stringWithFormat:@"72-150 %d%d %d%d", randomint1, randomint2, randomint3, randomint4]];
     [sms setDate:[NSString stringWithFormat:@"%@ %@ %d %@:%@", orderDay, monthName, year, orderHour, orderMinute]];
     
     return sms;

@@ -10,6 +10,8 @@
 
 @implementation SSMessagesTableHeaderView
 
+@synthesize delegate;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -46,6 +48,19 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (IBAction)call:(id)sender {
+    if([delegate respondsToSelector:@selector(call)])
+        [delegate call];
+}
+
+- (IBAction)facetime:(id)sender {
+    [delegate facetime];
+}
+
+- (IBAction)addToContact:(id)sender {
+    [delegate addToContact];
 }
 
 @end

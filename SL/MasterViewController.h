@@ -16,7 +16,6 @@
     NSMutableArray *zones;
     UISwitch *reduced;
     
-    id _adBannerView;
 }
 
 @property (strong, nonatomic) DetailViewController *detailViewController;
@@ -26,8 +25,6 @@
 @property (nonatomic, retain) IBOutlet UISwitch *reduced;
 
 @property (nonatomic, retain) IBOutletCollection(UISwitch) NSArray *zoneSwitches;
-
-@property (nonatomic, retain) id adBannerView;
 
 - (IBAction)generate:(id)sender;
 

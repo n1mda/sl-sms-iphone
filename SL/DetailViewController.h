@@ -11,7 +11,10 @@
 #import "SSMessagesTableHeaderDateView.h"
 #import "SMS.h"
 
-@interface DetailViewController : SSMessagesViewController {
+#import <AddressBook/AddressBook.h>
+#import <AddressBookUI/AddressBookUI.h>
+
+@interface DetailViewController : SSMessagesViewController <UIActionSheetDelegate, ABNewPersonViewControllerDelegate> {
     SMS *sms;
     SSMessagesTableHeaderDateView *tableHeaderDateView;
 }
@@ -21,8 +24,8 @@
 
 - (void)setSms:(SMS *)sms_;
 
-- (IBAction)call:(id)sender;
-- (IBAction)facetime:(id)sender;
-- (IBAction)addContact:(id)sender;
+- (void)call;
+- (void)facetime;
+- (void)addToContact;
 
 @end

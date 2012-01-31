@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SSMessagesTableHeaderView : UIViewController
+@interface SSMessagesTableHeaderView : UIViewController {
+    id delegate;
+}
+
+@property (nonatomic, retain) id delegate;
 
 @end

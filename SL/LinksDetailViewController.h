@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AddressBook/AddressBook.h>
+#import <AddressBookUI/AddressBookUI.h>
 
-@interface LinksDetailViewController : UITableViewController {
+@interface LinksDetailViewController : UITableViewController <ABUnknownPersonViewControllerDelegate> {
     NSArray *links;
 }
 

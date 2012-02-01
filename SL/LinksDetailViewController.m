@@ -170,6 +170,42 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      [detailViewController release];
      */
+    
+    NSString *name;
+    
+    switch ([[links objectAtIndex:indexPath.section] resultType]) {
+        case NSTextCheckingTypeLink:
+            name = [[[links objectAtIndex:indexPath.section] URL] absoluteString];
+            break;
+        case NSTextCheckingTypePhoneNumber:
+            name = [[links objectAtIndex:indexPath.section] phoneNumber];
+            break;
+            
+        default:
+            break;
+    }
+
+    ABAddressBookRef addressBook = ABAddressBookCreate();
+    
+    ABUnknownPersonViewController *unknown = [[ABUnknownPersonViewController alloc] init];
+    unknown.unknownPersonViewDelegate = self;
+    unknown.allowsAddingToAddressBook = YES;
+    unknown.allowsActions = YES;
+    unknown.addressBook = addressBook;
+    
+    ABRecordRef unknownPerson = ABPersonCreate();
+    
+    ABMutableMultiValueRef phoneNumberMultiValue = ABMultiValueCreateMutable(kABMultiStringPropertyType);  
+    ABMultiValueAddValueAndLabel(phoneNumberMultiValue, name, (CFStringRef)@"mobil", NULL);
+    ABRecordSetValue(unknownPerson, kABPersonPhoneProperty, phoneNumberMultiValue, nil);  
+    
+    unknown.displayedPerson = unknownPerson;
+    
+    [self.navigationController pushViewController:unknown animated:YES];
+    
+    CFRelease(unknownPerson);
+    
+    [unknown release];
 }
 
 @end

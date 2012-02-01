@@ -144,11 +144,12 @@
 #pragma mark Header View Delegate
 
 - (void)call {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@", [sms sender]]]];
+    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel:%@", [sms trimmedSender]]]];
 }
 
 - (void)facetime {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"facetime://%@", [sms sender]]]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"facetime:%@", [sms trimmedSender]]]];
 }
 
 - (void)addToContact {

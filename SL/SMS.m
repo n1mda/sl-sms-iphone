@@ -11,4 +11,11 @@
 @implementation SMS
 @synthesize message,sender,date;
 
+- (NSString *)trimmedSender {
+    NSString *trimmedString = [self.sender stringByReplacingOccurrencesOfString:@" " withString:@""];
+    NSString *trimmedString2 = [trimmedString stringByReplacingOccurrencesOfString:@"-" withString:@""];
+    
+    return trimmedString2;
+}
+
 @end

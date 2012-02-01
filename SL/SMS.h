@@ -18,4 +18,6 @@
 @property (nonatomic, retain) NSString *sender;
 @property (nonatomic, retain) NSString *date;
 
+- (NSString *)trimmedSender;
+
 @end

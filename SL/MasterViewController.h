@@ -7,14 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "iAd/ADBannerView.h"
 
 @class DetailViewController;
 
-@interface MasterViewController : UIViewController <ADBannerViewDelegate> {
+@interface MasterViewController : UIViewController {
     NSArray *zoneSwitches;
     NSMutableArray *zones;
     UISwitch *reduced;
+    
+    id delegate;
     
 }
 
@@ -25,6 +26,8 @@
 @property (nonatomic, retain) IBOutlet UISwitch *reduced;
 
 @property (nonatomic, retain) IBOutletCollection(UISwitch) NSArray *zoneSwitches;
+
+@property (nonatomic, retain) id delegate;
 
 - (IBAction)generate:(id)sender;
 

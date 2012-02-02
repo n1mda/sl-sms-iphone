@@ -9,7 +9,7 @@
 #import "SMS.h"
 
 @implementation SMS
-@synthesize message,sender,date;
+@synthesize message,sender,date, incoming;
 
 - (NSString *)trimmedSender {
     NSString *trimmedString = [self.sender stringByReplacingOccurrencesOfString:@" " withString:@""];

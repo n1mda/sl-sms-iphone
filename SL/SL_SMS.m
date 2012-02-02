@@ -147,7 +147,8 @@
     
     [sms setMessage:returnString];
     [sms setSender:[NSString stringWithFormat:@"72-150 %d%d %d%d", randomint1, randomint2, randomint3, randomint4]];
-    [sms setDate:[NSString stringWithFormat:@"%@ %@ %d %@:%@", orderDay, monthName, year, orderHour, orderMinute]];
+    //[sms setDate:[NSString stringWithFormat:@"%@ %@ %d %@:%@", orderDay, monthName, year, orderHour, orderMinute]];
+    [sms setDate:[NSDate date]];
     
     return sms;
 }

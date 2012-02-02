@@ -65,11 +65,17 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    [tableHeaderDateView setLabelText:[sms date]];
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setLocale:[[[NSLocale alloc] initWithLocaleIdentifier:@"sv_SE"] autorelease]];
+    [dateFormatter setDateFormat:@"dd MMM yyyy HH:mm"];
+    
+    [tableHeaderDateView setLabelText:[dateFormatter stringFromDate:[sms date]]];
     
     UIBarButtonItem *editButton = [[UIBarButtonItem alloc] initWithTitle:@"Ändra" style:UIBarButtonItemStyleBordered target:self action:@selector(editMessage)];
     self.navigationItem.rightBarButtonItem = editButton;
     [editButton release];
+    
 }
 
 - (void)editMessage {
@@ -116,10 +122,10 @@
 #pragma mark SSMessagesViewController
 
 - (SSMessageStyle)messageStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
-	if (indexPath.row % 2) {
-		return SSMessageStyleRight;
-	}
-	return SSMessageStyleLeft;
+	if([sms incoming])
+        return SSMessageStyleLeft;
+    
+    return SSMessageStyleRight;
 }
 
 

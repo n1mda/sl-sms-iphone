@@ -11,12 +11,18 @@
 @interface SMS : NSObject {
     NSString *message;
     NSString *sender;
-    NSString *date;
+    //NSString *date;
+    NSDate *date;
+    
+    BOOL incoming;
 }
 
 @property (nonatomic, retain) NSString *message;
 @property (nonatomic, retain) NSString *sender;
-@property (nonatomic, retain) NSString *date;
+//@property (nonatomic, retain) NSString *date;
+@property (nonatomic, retain) NSDate *date;
+
+@property (nonatomic) BOOL incoming;
 
 - (NSString *)trimmedSender;
 

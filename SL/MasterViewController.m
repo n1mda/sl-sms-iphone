@@ -19,6 +19,8 @@
 
 @synthesize zoneSwitches, zones;
 
+@synthesize delegate;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -46,6 +48,22 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     [self setTitle:@"Meddelanden"];
+    
+    UIBarButtonItem *closebutton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(close)];
+    
+    [self.navigationItem setLeftBarButtonItem:closebutton];
+    
+    [closebutton release];
+    
+    UIBarButtonItem *createButton = [[UIBarButtonItem alloc] initWithTitle:@"Generera" style:UIBarButtonItemStyleBordered target:self action:@selector(generate:)];
+    
+    [self.navigationItem setRightBarButtonItem:createButton];
+    
+    [createButton release];
+}
+
+- (void)close {
+    [self.navigationController dismissModalViewControllerAnimated:YES];
 }
 
 - (void)viewDidUnload
@@ -92,16 +110,24 @@
         return;
     }
     
+    SMS *sentSMS = [[SMS alloc] init];
+    [sentSMS setDate:[NSDate date]];
+    [sentSMS setSender:@"72-150"];
+    [sentSMS setMessage:[NSString stringWithFormat:@"%@%@", reduced.on ? @"R" : @"H", [[zones valueForKey:@"description"] componentsJoinedByString:@""]]];
+    
+    [sentSMS setIncoming:NO];
+    
+    [delegate addSMSMessage:sentSMS];
+    
     SL_SMS *sl = [[SL_SMS alloc] init];
     SMS *sms = [sl createSLMessageWithReduced:reduced.on zones:zones];
+    [sms setIncoming:YES];
     
-    DetailViewController *detailViewController = [[DetailViewController alloc] init];
-    [detailViewController setSms:sms];
+    [delegate addSMSMessage:sms];
     
-    [self.navigationController pushViewController:detailViewController animated:YES];
-    
-	[detailViewController release];
     [zones release];
+    
+    [self close];
 }
 
 @end

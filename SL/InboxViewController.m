@@ -54,6 +54,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self.view setBackgroundColor:[UIColor colorWithRed:0.886 green:0.906 blue:0.929 alpha:1]]; /*#e2e7ed*/
 
     [self setTitle:@"Meddelanden"];
     
@@ -202,14 +204,17 @@
     
     [cell addSubview:dateLabel];
     [dateLabel release];
-     
-    // Configure the cell...
     
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 60.0;
+}
+
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    [cell setBackgroundColor:[UIColor whiteColor]];
 }
 
 /*

@@ -51,8 +51,7 @@
 }
 
 - (IBAction)call:(id)sender {
-    if([delegate respondsToSelector:@selector(call)])
-        [delegate call];
+    [delegate call];
 }
 
 - (IBAction)facetime:(id)sender {

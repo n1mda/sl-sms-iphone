@@ -24,23 +24,21 @@
 - (id)init {
     self = [super init];
     
-    UIViewController *viewController = [[UIViewController alloc] init];
+    UIView *view = [[UIView alloc] init];
+    
+    [view setFrame:CGRectMake(0, 0, 320, 80)];
     
     SSMessagesTableHeaderView *tableHeaderView = [[SSMessagesTableHeaderView alloc] init];
-    tableHeaderDateView = [[SSMessagesTableHeaderDateView alloc] init];
-    
+    [tableHeaderView.view setFrame:CGRectMake(0, 0, 320, 64)];
     [tableHeaderView setDelegate:self];
     
-    [tableHeaderDateView.view setFrame:CGRectMake(0, tableHeaderView.view.frame.size.height, tableHeaderDateView.view.frame.size.width, tableHeaderDateView.view.frame.size.height)];
+    tableHeaderDateView = [[SSMessagesTableHeaderDateView alloc] init];
+    [tableHeaderDateView.view setFrame:CGRectMake(0, 64, 320, 15)];
     
-    [viewController.view setFrame:CGRectMake(0, 0, tableHeaderView.view.frame.size.width, tableHeaderView.view.frame.size.height + tableHeaderDateView.view.frame.size.height)];
+    [view addSubview:tableHeaderView.view];
+    [view addSubview:tableHeaderDateView.view];
     
-    [viewController.view addSubview:tableHeaderView.view];
-    [viewController.view addSubview:tableHeaderDateView.view];
-    
-    [super setTableHeaderView:viewController.view];
-    
-    [viewController release];
+    [super setTableHeaderView:view];
     
     return self;
 }
@@ -49,7 +47,6 @@
 
 - (void)setSms:(SMS *)sms_ {
     [self setTitle:[sms_ sender]];
-    //[super setDate:[sms_ date]];
     sms = sms_;
 }
 
@@ -68,7 +65,7 @@
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setLocale:[[[NSLocale alloc] initWithLocaleIdentifier:@"sv_SE"] autorelease]];
-    [dateFormatter setDateFormat:@"dd MMM yyyy HH:mm"];
+    [dateFormatter setDateFormat:@"d MMM yyyy HH:mm"];
     
     [tableHeaderDateView setLabelText:[dateFormatter stringFromDate:[sms date]]];
     
@@ -150,7 +147,6 @@
 #pragma mark Header View Delegate
 
 - (void)call {
-    
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel:%@", [sms trimmedSender]]]];
 }
 

@@ -11,9 +11,12 @@
 
 @interface InboxViewController : UITableViewController {
     NSMutableArray *smses;
+    
+    UIBarButtonItem *newButton;
 }
 
 @property (nonatomic, retain) NSMutableArray *smses;
+@property (nonatomic, retain) UIBarButtonItem *newButton;
 
 - (void)addSMSMessage:(SMS *)message;
 

@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MessageTableViewCell : UITableViewCell
+@interface MessageTableViewCell : UITableViewCell {
+    UILabel *dateLabel;
+}
+
+@property (nonatomic, retain) UILabel *dateLabel;
 
 @end

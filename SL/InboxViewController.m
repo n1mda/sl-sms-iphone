@@ -14,6 +14,7 @@
 @implementation InboxViewController
 
 @synthesize smses;
+@synthesize newButton;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -61,33 +62,30 @@
     
     smses = [[NSMutableArray alloc] init];
     
-    UIBarButtonItem *editButton = [[UIBarButtonItem alloc] initWithTitle:@"Ändra" style:UIBarButtonItemStylePlain target:self action:nil];
+    UIBarButtonItem *editButton = [[UIBarButtonItem alloc] initWithTitle:@"Ändra" style:UIBarButtonItemStylePlain target:self action:@selector(editMessages)];
     
     [self.navigationItem setLeftBarButtonItem:editButton];
     [editButton release];
     
-    UIBarButtonItem *newButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose target:self action:@selector(createNewMessage)];
+    newButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose target:self action:@selector(createNewMessage)];
     
     [self.navigationItem setRightBarButtonItem:newButton];
-    [newButton release];
     
     NSMutableArray *names = [[NSMutableArray alloc] initWithObjects:@"Emma Bergqvist", @"Heidi Ahlberg", @"Marco Djelevic", @"André Nordlund", @"Karin Äng", @"Fredrik Drejek", @"Viktor Lundgren", @"Michel Grundtman", @"Julia Sara", @"Jesper Olsson", @"Malin Falck", @"Joe Touma", @"Johan Holmgren", @"Sebatiana Gustafsson", nil]; // 14 names
     
     
-    NSUInteger firstObject = 0;
-    for (int i = 0; i<[names count];i++) {
-        NSUInteger randomIndex = random() % [names count];
-        [names exchangeObjectAtIndex:firstObject withObjectAtIndex:randomIndex];
-        firstObject +=1;
+    srandom(time(NULL));
+    for(NSInteger x = 0; x < [names count]; x++) {
+        NSInteger randint = (arc4random() % ([names count] - x)) + x;
+        [names exchangeObjectAtIndex:x withObjectAtIndex:randint];
     }
     
     NSMutableArray *messages = [[NSMutableArray alloc] initWithObjects:@"Ja ringer sen", @"Hahah", @"lol jag vet", @"Kan du komma imorn?", @"Ja jag kommer snart", @"Ring mig senare", @"såg du senaste avsnittet? var helt okej.", @"Asgött. grattis!", @"Vad ska ni göra ikväll?", @":)", @"Skickar det på mailen", @"Kolla kanal 5 nu!", @"Haha aa", @"mm ja håller med", nil]; // 14 names
     
-    firstObject = 0;    
-    for (int i = 0; i<[messages count];i++) {
-        NSUInteger randomIndex = random() % [messages count];
-        [messages exchangeObjectAtIndex:firstObject withObjectAtIndex:randomIndex];
-        firstObject +=1;
+    srandom(time(NULL));
+    for(NSInteger x = 0; x < [messages count]; x++) {
+        NSInteger randint = (arc4random() % ([messages count] - x)) + x;
+        [messages exchangeObjectAtIndex:x withObjectAtIndex:randint];
     }
     
     NSMutableArray *dates = [[NSMutableArray alloc] init];
@@ -147,7 +145,22 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return (interfaceOrientation == UIInterfaceOrientationPortrait || UIInterfaceOrientationIsLandscape(interfaceOrientation));
+}
+
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
+    [self.tableView reloadData];
+}
+
+
+- (void)editMessages {
+    if(![self.tableView isEditing]) {
+        [self.tableView setEditing:YES animated:YES];
+        [self.navigationItem setRightBarButtonItem:nil];
+    } else {
+        [self.tableView setEditing:NO animated:YES];
+        [self.navigationItem setRightBarButtonItem:newButton];
+    }
 }
 
 #pragma mark - Table view data source
@@ -181,9 +194,8 @@
     
     [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
     
-    UILabel *dateLabel = [[UILabel alloc] initWithFrame:CGRectMake(cell.frame.size.width - 64, 4, 100, 20)];
-    [dateLabel setFont:[UIFont systemFontOfSize:13.0]];
-    [dateLabel setTextColor:[UIColor colorWithRed:0.165 green:0.455 blue:0.851 alpha:1]]; /*#2a74d9*/
+    [cell.dateLabel setFont:[UIFont systemFontOfSize:13.0]];
+    [cell.dateLabel setTextColor:[UIColor colorWithRed:0.165 green:0.455 blue:0.851 alpha:1]]; /*#2a74d9*/
 
     NSDate *date = [[smses objectAtIndex:indexPath.row] date];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
@@ -200,10 +212,10 @@
     if([yesterday integerValue] < [today integerValue])
         time = @"igår";
     
-    [dateLabel setText:time];
+    [cell.dateLabel setText:time];
     
-    [cell addSubview:dateLabel];
-    [dateLabel release];
+    //[cell addSubview:dateLabel];
+    //[dateLabel release];
     
     return cell;
 }
@@ -268,6 +280,11 @@
     [self.navigationController pushViewController:detailViewController animated:YES];
     
     [detailViewController release];
+}
+
+- (void)dealloc {
+    [super dealloc];
+    [newButton release];
 }
 
 @end

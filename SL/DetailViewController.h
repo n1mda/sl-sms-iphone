@@ -14,7 +14,7 @@
 #import <AddressBook/AddressBook.h>
 #import <AddressBookUI/AddressBookUI.h>
 
-@interface DetailViewController : SSMessagesViewController <UIActionSheetDelegate, ABNewPersonViewControllerDelegate> {
+@interface DetailViewController : SSMessagesViewController <UIActionSheetDelegate, ABNewPersonViewControllerDelegate, UIGestureRecognizerDelegate> {
     SMS *sms;
     SSMessagesTableHeaderDateView *tableHeaderDateView;
 }

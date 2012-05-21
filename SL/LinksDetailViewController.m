@@ -101,7 +101,7 @@
     
     // Configure the cell...
     
-    switch ([[links objectAtIndex:indexPath.section] resultType]) {
+    /*switch ([[links objectAtIndex:indexPath.section] resultType]) {
         case NSTextCheckingTypeLink:
             [cell.textLabel setText:[[[links objectAtIndex:indexPath.section] URL] absoluteString]];
             break;
@@ -112,7 +112,9 @@
             
         default:
             break;
-    }
+    }*/
+    
+    [cell.textLabel setText:[links objectAtIndex:indexPath.section]];
     
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
@@ -173,7 +175,7 @@
     
     NSString *name;
     
-    switch ([[links objectAtIndex:indexPath.section] resultType]) {
+    /*switch ([[links objectAtIndex:indexPath.section] resultType]) {
         case NSTextCheckingTypeLink:
             name = [[[links objectAtIndex:indexPath.section] URL] absoluteString];
             break;
@@ -183,7 +185,9 @@
             
         default:
             break;
-    }
+    }*/
+    
+    name = [links objectAtIndex:indexPath.section];
 
     ABAddressBookRef addressBook = ABAddressBookCreate();
     

@@ -76,8 +76,7 @@
 }
 
 - (void)editMessage {
-    [self setEditing:([self isEditing] ? NO : YES) animated:YES];
-    NSLog(@"Editing: %d", [self isEditing]);
+    [self.tableView setEditing:([self.tableView isEditing] ? NO : YES) animated:YES];
 }
 
 - (void)viewDidUnload
@@ -139,7 +138,7 @@
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
     LinksDetailViewController *linksDetailViewController = [[LinksDetailViewController alloc] initWithStyle:UITableViewStyleGrouped];
         
-    [linksDetailViewController setLinks:[(SSMessageTableViewCell *)[tableView cellForRowAtIndexPath:indexPath] links]];
+    [linksDetailViewController setLinks:[sms links]];
     
     [self.navigationController pushViewController:linksDetailViewController animated:YES];
 }

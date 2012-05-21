@@ -31,18 +31,18 @@
 		DF00B88714C9977B008A891E /* tableviewheader_facetime_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF00B88614C9977B008A891E /* tableviewheader_facetime_selected@2x.png */; };
 		DF00B88B14C997C2008A891E /* tableviewheader_add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF00B88814C997C2008A891E /* tableviewheader_add@2x.png */; };
 		DF00B88C14C997C2008A891E /* tableviewheader_facetime@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF00B88914C997C2008A891E /* tableviewheader_facetime@2x.png */; };
-		DF00B88D14C997C2008A891E /* tableviewheader_ring@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF00B88A14C997C2008A891E /* tableviewheader_ring@2x.png */; };
 		DF00B88F14C997D1008A891E /* tableheaderview_message@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF00B88E14C997D1008A891E /* tableheaderview_message@2x.png */; };
 		DF00B89114C99831008A891E /* tableviewheader_add_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF00B89014C99831008A891E /* tableviewheader_add_selected@2x.png */; };
 		DF00B89514C9A04A008A891E /* LinksDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF00B89314C9A04A008A891E /* LinksDetailViewController.m */; };
 		DF00B89614C9A04A008A891E /* LinksDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF00B89414C9A04A008A891E /* LinksDetailViewController.xib */; };
-		DF0C959E14D5BDCE00FA3F4F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DF0C959C14D5BDCE00FA3F4F /* Icon.png */; };
-		DF0C959F14D5BDCE00FA3F4F /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF0C959D14D5BDCE00FA3F4F /* Icon@2x.png */; };
 		DF0C95A114D5BE7C00FA3F4F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DF0C95A014D5BE7C00FA3F4F /* Icon.png */; };
 		DF0C95A314D5BE8000FA3F4F /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF0C95A214D5BE8000FA3F4F /* Icon@2x.png */; };
 		DF10299714D971860031F6DB /* InboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF10299514D971860031F6DB /* InboxViewController.m */; };
 		DF10299814D971860031F6DB /* InboxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF10299614D971860031F6DB /* InboxViewController.xib */; };
 		DF1029A014D980B60031F6DB /* MessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF10299E14D980B60031F6DB /* MessageTableViewCell.m */; };
+		DF1F4C7314E27392002D13D5 /* tableviewheader_ring_landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF1F4C7214E27392002D13D5 /* tableviewheader_ring_landscape@2x.png */; };
+		DF1F4C7614E273C1002D13D5 /* tableheaderview_message_landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF1F4C7514E273C1002D13D5 /* tableheaderview_message_landscape@2x.png */; };
+		DF1F4C7814E273D4002D13D5 /* tableviewheader_add_landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF1F4C7714E273D4002D13D5 /* tableviewheader_add_landscape@2x.png */; };
 		DF2110FF14D877EB009B4E26 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF2110FE14D877EB009B4E26 /* AddressBookUI.framework */; };
 		DF21110214D878DD009B4E26 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF21110114D878DD009B4E26 /* AddressBook.framework */; };
 		DFA9493914DAF58C00FC18A8 /* SSMessagesViewControllerCameraButton.png in Resources */ = {isa = PBXBuildFile; fileRef = DFA9493814DAF58C00FC18A8 /* SSMessagesViewControllerCameraButton.png */; };
@@ -63,6 +63,7 @@
 		DFDA986614C5DA680082F911 /* SSMessagesTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDA986414C5DA670082F911 /* SSMessagesTableHeaderView.xib */; };
 		DFDA991114C62E0D0082F911 /* SSMessagesTableHeaderDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDA990F14C62E0B0082F911 /* SSMessagesTableHeaderDateView.m */; };
 		DFDA991214C62E0D0082F911 /* SSMessagesTableHeaderDateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDA991014C62E0C0082F911 /* SSMessagesTableHeaderDateView.xib */; };
+		DFF93D0D14F94BEA006EB916 /* SLTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF93D0C14F94BEA006EB916 /* SLTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,7 +96,6 @@
 		DF00B88614C9977B008A891E /* tableviewheader_facetime_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableviewheader_facetime_selected@2x.png"; sourceTree = "<group>"; };
 		DF00B88814C997C2008A891E /* tableviewheader_add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableviewheader_add@2x.png"; sourceTree = "<group>"; };
 		DF00B88914C997C2008A891E /* tableviewheader_facetime@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableviewheader_facetime@2x.png"; sourceTree = "<group>"; };
-		DF00B88A14C997C2008A891E /* tableviewheader_ring@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableviewheader_ring@2x.png"; sourceTree = "<group>"; };
 		DF00B88E14C997D1008A891E /* tableheaderview_message@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableheaderview_message@2x.png"; sourceTree = "<group>"; };
 		DF00B89014C99831008A891E /* tableviewheader_add_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableviewheader_add_selected@2x.png"; sourceTree = "<group>"; };
 		DF00B89214C9A04A008A891E /* LinksDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinksDetailViewController.h; sourceTree = "<group>"; };
@@ -110,6 +110,9 @@
 		DF10299614D971860031F6DB /* InboxViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InboxViewController.xib; sourceTree = "<group>"; };
 		DF10299D14D980B60031F6DB /* MessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageTableViewCell.h; sourceTree = "<group>"; };
 		DF10299E14D980B60031F6DB /* MessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTableViewCell.m; sourceTree = "<group>"; };
+		DF1F4C7214E27392002D13D5 /* tableviewheader_ring_landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableviewheader_ring_landscape@2x.png"; sourceTree = "<group>"; };
+		DF1F4C7514E273C1002D13D5 /* tableheaderview_message_landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableheaderview_message_landscape@2x.png"; sourceTree = "<group>"; };
+		DF1F4C7714E273D4002D13D5 /* tableviewheader_add_landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableviewheader_add_landscape@2x.png"; sourceTree = "<group>"; };
 		DF2110FE14D877EB009B4E26 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		DF21110114D878DD009B4E26 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		DFA9493814DAF58C00FC18A8 /* SSMessagesViewControllerCameraButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SSMessagesViewControllerCameraButton.png; path = ../../../Libraries/ssmessagesviewcontroller/Images/SSMessagesViewControllerCameraButton.png; sourceTree = "<group>"; };
@@ -140,6 +143,8 @@
 		DFDA990E14C62E0A0082F911 /* SSMessagesTableHeaderDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMessagesTableHeaderDateView.h; sourceTree = "<group>"; };
 		DFDA990F14C62E0B0082F911 /* SSMessagesTableHeaderDateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMessagesTableHeaderDateView.m; sourceTree = "<group>"; };
 		DFDA991014C62E0C0082F911 /* SSMessagesTableHeaderDateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSMessagesTableHeaderDateView.xib; sourceTree = "<group>"; };
+		DFF93D0B14F94BEA006EB916 /* SLTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLTextView.h; sourceTree = "<group>"; };
+		DFF93D0C14F94BEA006EB916 /* SLTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +177,8 @@
 				2474076414D6A0D800345FB4 /* SSMessageTableViewCellBubbleView.m */,
 				2474076514D6A0D800345FB4 /* SSTextField.h */,
 				2474076614D6A0D800345FB4 /* SSTextField.m */,
+				DFF93D0B14F94BEA006EB916 /* SLTextView.h */,
+				DFF93D0C14F94BEA006EB916 /* SLTextView.m */,
 			);
 			name = SSMessagesViewController;
 			path = ../ssmessagesviewcontroller/Classes;
@@ -206,12 +213,14 @@
 			children = (
 				DF00B88214C9956E008A891E /* tableviewheader_ring@2x.png */,
 				DF00B88414C99660008A891E /* tableviewheader_ring_selected@2x.png */,
+				DF1F4C7214E27392002D13D5 /* tableviewheader_ring_landscape@2x.png */,
+				DF00B88914C997C2008A891E /* tableviewheader_facetime@2x.png */,
 				DF00B88614C9977B008A891E /* tableviewheader_facetime_selected@2x.png */,
 				DF00B88814C997C2008A891E /* tableviewheader_add@2x.png */,
-				DF00B88914C997C2008A891E /* tableviewheader_facetime@2x.png */,
-				DF00B88A14C997C2008A891E /* tableviewheader_ring@2x.png */,
 				DF00B89014C99831008A891E /* tableviewheader_add_selected@2x.png */,
+				DF1F4C7714E273D4002D13D5 /* tableviewheader_add_landscape@2x.png */,
 				DF00B88E14C997D1008A891E /* tableheaderview_message@2x.png */,
+				DF1F4C7514E273C1002D13D5 /* tableheaderview_message_landscape@2x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -267,6 +276,8 @@
 				DF00B89214C9A04A008A891E /* LinksDetailViewController.h */,
 				DF00B89314C9A04A008A891E /* LinksDetailViewController.m */,
 				DF00B89414C9A04A008A891E /* LinksDetailViewController.xib */,
+				DFDA985D14C5CD390082F911 /* SMS.h */,
+				DFDA985E14C5CD390082F911 /* SMS.m */,
 				DFDA985A14C5CCFB0082F911 /* SL_SMS.h */,
 				DFDA985B14C5CCFB0082F911 /* SL_SMS.m */,
 				DFDA982A14C5CC280082F911 /* MasterViewController.xib */,
@@ -274,8 +285,6 @@
 				DF0C959C14D5BDCE00FA3F4F /* Icon.png */,
 				DF0C959D14D5BDCE00FA3F4F /* Icon@2x.png */,
 				DFDA981914C5CC280082F911 /* Supporting Files */,
-				DFDA985D14C5CD390082F911 /* SMS.h */,
-				DFDA985E14C5CD390082F911 /* SMS.m */,
 			);
 			path = SL;
 			sourceTree = "<group>";
@@ -365,12 +374,9 @@
 				DF00B88714C9977B008A891E /* tableviewheader_facetime_selected@2x.png in Resources */,
 				DF00B88B14C997C2008A891E /* tableviewheader_add@2x.png in Resources */,
 				DF00B88C14C997C2008A891E /* tableviewheader_facetime@2x.png in Resources */,
-				DF00B88D14C997C2008A891E /* tableviewheader_ring@2x.png in Resources */,
 				DF00B88F14C997D1008A891E /* tableheaderview_message@2x.png in Resources */,
 				DF00B89114C99831008A891E /* tableviewheader_add_selected@2x.png in Resources */,
 				DF00B89614C9A04A008A891E /* LinksDetailViewController.xib in Resources */,
-				DF0C959E14D5BDCE00FA3F4F /* Icon.png in Resources */,
-				DF0C959F14D5BDCE00FA3F4F /* Icon@2x.png in Resources */,
 				DF0C95A114D5BE7C00FA3F4F /* Icon.png in Resources */,
 				DF0C95A314D5BE8000FA3F4F /* Icon@2x.png in Resources */,
 				247407B414D6A12200345FB4 /* SSMessagesViewControllerCameraButton@2x.png in Resources */,
@@ -390,6 +396,9 @@
 				DF10299814D971860031F6DB /* InboxViewController.xib in Resources */,
 				DFA9493914DAF58C00FC18A8 /* SSMessagesViewControllerCameraButton.png in Resources */,
 				DFA9493B14DAF59C00FC18A8 /* SSMessagesViewControllerSendButtonBackgroundGreen.png in Resources */,
+				DF1F4C7314E27392002D13D5 /* tableviewheader_ring_landscape@2x.png in Resources */,
+				DF1F4C7614E273C1002D13D5 /* tableheaderview_message_landscape@2x.png in Resources */,
+				DF1F4C7814E273D4002D13D5 /* tableviewheader_add_landscape@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +441,7 @@
 				2474078D14D6A0D900345FB4 /* SSTextField.m in Sources */,
 				DF10299714D971860031F6DB /* InboxViewController.m in Sources */,
 				DF1029A014D980B60031F6DB /* MessageTableViewCell.m in Sources */,
+				DFF93D0D14F94BEA006EB916 /* SLTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,12 +525,13 @@
 					armv6,
 					armv7,
 				);
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SL/SL-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "SL/SL-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -539,7 +550,7 @@
 				GCC_PREFIX_HEADER = "SL/SL-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "SL/SL-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

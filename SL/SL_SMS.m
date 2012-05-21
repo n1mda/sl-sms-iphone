@@ -140,15 +140,19 @@
     // http://mobil.sl.se
     
     NSString *zonesString = [[zones valueForKey:@"description"] componentsJoinedByString:@""];
-    NSString *returnString = [NSString stringWithFormat:@"%@-%@ %@:%@ %d%d\n+'%d'+\n+'%d'+\n+'%d'+\nSL biljett giltig till %@:%@ %d-%@-%@\n%@ %d kr ink 6%% \nmoms\n%@\nhttp://mobil.sl.se", priceText, zonesString, validHourStr, validMinuteStr, randomint3, randomint4,
-                              randomint5, randomint6, randomint7,
+    //NSString *returnString = [NSString stringWithFormat:@"%@-%@ %@:%@ %d%d\n+'%d'+\n+'%d'+\n+'%d'+\nSL biljett giltig till %@:%@ %d-%@-%@\n%@ %d kr ink 6%% \nmoms\n%@\nhttp://mobil.sl.se", priceText, zonesString, validHourStr, validMinuteStr, randomint3, randomint4,
+    //                          randomint5, randomint6, randomint7,
+    //                         validHourStr, validMinuteStr, validYear, validMonthStr, validDayStr,
+    //                          priceText2, price, checksum];
+    
+    NSString *returnString = [NSString stringWithFormat:@"%@-%@ %@:%@ %d%d\n\nSL biljett giltig till %@:%@ %d-%@-%@\n%@ %d kr ink 6%% \nmoms\n%@\nhttp://mobil.sl.se", priceText, zonesString, validHourStr, validMinuteStr, randomint3, randomint4,
                               validHourStr, validMinuteStr, validYear, validMonthStr, validDayStr,
                               priceText2, price, checksum];
     
     [sms setMessage:returnString];
     [sms setSender:[NSString stringWithFormat:@"72-150 %d%d %d%d", randomint1, randomint2, randomint3, randomint4]];
-    //[sms setDate:[NSString stringWithFormat:@"%@ %@ %d %@:%@", orderDay, monthName, year, orderHour, orderMinute]];
     [sms setDate:[NSDate date]];
+    [sms setLinks:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%@%d%@%@", validMinuteStr, validYear, validMonthStr, validDayStr], @"http://mobil.sl.se", nil]];
     
     return sms;
 }

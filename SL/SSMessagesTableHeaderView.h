@@ -10,8 +10,21 @@
 
 @interface SSMessagesTableHeaderView : UIViewController {
     id delegate;
+    
+    IBOutlet UIImageView *messageImageView;
+    
+    UIButton *callButton;
+    UIButton *facetimeButton;
+    UIButton *addContactButton;
+    
 }
 
 @property (nonatomic, retain) id delegate;
+
+@property (nonatomic, retain) IBOutlet UIImageView *messageImageView;
+
+@property (nonatomic, retain) UIButton *callButton;
+@property (nonatomic, retain) UIButton *facetimeButton;
+@property (nonatomic, retain) UIButton *addContactButton;
 
 @end

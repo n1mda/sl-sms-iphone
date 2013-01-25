@@ -17,6 +17,8 @@
     UIButton *facetimeButton;
     UIButton *addContactButton;
     
+    BOOL buttonAvailable;
+    
 }
 
 @property (nonatomic, retain) id delegate;

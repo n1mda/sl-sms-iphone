@@ -145,14 +145,20 @@
     //                         validHourStr, validMinuteStr, validYear, validMonthStr, validDayStr,
     //                          priceText2, price, checksum];
     
-    NSString *returnString = [NSString stringWithFormat:@"%@-%@ %@:%@ %d%d\n\nSL biljett giltig till %@:%@ %d-%@-%@\n%@ %d kr ink 6%% \nmoms\n%@\nhttp://mobil.sl.se", priceText, zonesString, validHourStr, validMinuteStr, randomint3, randomint4,
+    // denna text fungerar, men just nu (2013-01-24) har dom lagt till infotext om att sms'en byts ut i februari
+    //NSString *returnString = [NSString stringWithFormat:@"%@-%@ %@:%@ %d%d\n\nSL biljett giltig till %@:%@ %d-%@-%@\n%@ %d kr ink 6%% \nmoms\n%@\nhttp://mobil.sl.se", priceText, zonesString, validHourStr, validMinuteStr, randomint3, randomint4,
+    //                          validHourStr, validMinuteStr, validYear, validMonthStr, validDayStr,
+    //                          priceText2, price, checksum];
+    
+    NSString *returnString = [NSString stringWithFormat:@"%@-%@ %@:%@ %d%d\n\nSL biljett giltig till %@:%@ %d-%@-%@\n%@ %d kr ink 6%% \nmoms\n%@\nhttp://mobil.sl.se\n\n1 februari ändras sms-biljetten\n\nFrån den 1 februari\nköper du din sms-biljett\npå ett nytt nummer.\nDet nya nummret är 076-7201010\n\nInnan ditt första köp på det nya numret måste du registrera dig\npå sl.se/sms. Sedan beställer du precis som vanligt. Ändringen\ngörs för att leva upp till nya regler och ett nytt system.\n\nLäs gärna mer på http://sl.se Tack!", priceText, zonesString, validHourStr, validMinuteStr, randomint3, randomint4,
                               validHourStr, validMinuteStr, validYear, validMonthStr, validDayStr,
                               priceText2, price, checksum];
     
     [sms setMessage:returnString];
     [sms setSender:[NSString stringWithFormat:@"72-150 %d%d %d%d", randomint1, randomint2, randomint3, randomint4]];
     [sms setDate:[NSDate date]];
-    [sms setLinks:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%@%d%@%@", validMinuteStr, validYear, validMonthStr, validDayStr], @"http://mobil.sl.se", nil]];
+    //[sms setLinks:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%@%d%@%@", validMinuteStr, validYear, validMonthStr, validDayStr], @"http://mobil.sl.se", nil]];
+    [sms setLinks:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%@ %d-%@-%@", validMinuteStr, validYear, validMonthStr, validDayStr], @"http://mobil.sl.se", @"076-7201010", @"http://sl.se/sms", @"http://sl.se", nil]];
     
     return sms;
 }

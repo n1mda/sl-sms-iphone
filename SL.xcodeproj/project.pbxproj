@@ -37,6 +37,8 @@
 		DF00B89614C9A04A008A891E /* LinksDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF00B89414C9A04A008A891E /* LinksDetailViewController.xib */; };
 		DF0C95A114D5BE7C00FA3F4F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DF0C95A014D5BE7C00FA3F4F /* Icon.png */; };
 		DF0C95A314D5BE8000FA3F4F /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF0C95A214D5BE8000FA3F4F /* Icon@2x.png */; };
+		DF0CA735158B7F5100AB7E30 /* tableviewheader_ring_landscape_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF0CA734158B7F5100AB7E30 /* tableviewheader_ring_landscape_selected@2x.png */; };
+		DF0CA738158B7F7800AB7E30 /* tableviewheader_add_landscape_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF0CA737158B7F7800AB7E30 /* tableviewheader_add_landscape_selected@2x.png */; };
 		DF10299714D971860031F6DB /* InboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF10299514D971860031F6DB /* InboxViewController.m */; };
 		DF10299814D971860031F6DB /* InboxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF10299614D971860031F6DB /* InboxViewController.xib */; };
 		DF1029A014D980B60031F6DB /* MessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF10299E14D980B60031F6DB /* MessageTableViewCell.m */; };
@@ -45,8 +47,13 @@
 		DF1F4C7814E273D4002D13D5 /* tableviewheader_add_landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF1F4C7714E273D4002D13D5 /* tableviewheader_add_landscape@2x.png */; };
 		DF2110FF14D877EB009B4E26 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF2110FE14D877EB009B4E26 /* AddressBookUI.framework */; };
 		DF21110214D878DD009B4E26 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF21110114D878DD009B4E26 /* AddressBook.framework */; };
+		DF9D51B0158A33D40097BD76 /* tableviewheader_facetime_landscape_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF9D51AF158A33D40097BD76 /* tableviewheader_facetime_landscape_selected@2x.png */; };
+		DF9D51B2158A34140097BD76 /* tableviewheader_facetime_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = DF9D51B1158A34140097BD76 /* tableviewheader_facetime_landscape.png */; };
 		DFA9493914DAF58C00FC18A8 /* SSMessagesViewControllerCameraButton.png in Resources */ = {isa = PBXBuildFile; fileRef = DFA9493814DAF58C00FC18A8 /* SSMessagesViewControllerCameraButton.png */; };
 		DFA9493B14DAF59C00FC18A8 /* SSMessagesViewControllerSendButtonBackgroundGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = DFA9493A14DAF59C00FC18A8 /* SSMessagesViewControllerSendButtonBackgroundGreen.png */; };
+		DFAF362B1618C7B400499FCE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFAF362A1618C7B400499FCE /* Default-568h@2x.png */; };
+		DFAF362E1618CAFD00499FCE /* tableheaderview_message_landscape_iphone5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFAF362D1618CAFC00499FCE /* tableheaderview_message_landscape_iphone5@2x.png */; };
+		DFAF36301618CC2700499FCE /* tableviewheader_ring_landscape_iphone5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFAF362F1618CC2700499FCE /* tableviewheader_ring_landscape_iphone5@2x.png */; };
 		DFDA981314C5CC280082F911 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFDA981214C5CC280082F911 /* UIKit.framework */; };
 		DFDA981514C5CC280082F911 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFDA981414C5CC280082F911 /* Foundation.framework */; };
 		DFDA981714C5CC280082F911 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFDA981614C5CC280082F911 /* CoreGraphics.framework */; };
@@ -105,6 +112,8 @@
 		DF0C959D14D5BDCE00FA3F4F /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		DF0C95A014D5BE7C00FA3F4F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		DF0C95A214D5BE8000FA3F4F /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		DF0CA734158B7F5100AB7E30 /* tableviewheader_ring_landscape_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableviewheader_ring_landscape_selected@2x.png"; sourceTree = "<group>"; };
+		DF0CA737158B7F7800AB7E30 /* tableviewheader_add_landscape_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableviewheader_add_landscape_selected@2x.png"; sourceTree = "<group>"; };
 		DF10299414D971860031F6DB /* InboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InboxViewController.h; sourceTree = "<group>"; };
 		DF10299514D971860031F6DB /* InboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InboxViewController.m; sourceTree = "<group>"; };
 		DF10299614D971860031F6DB /* InboxViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InboxViewController.xib; sourceTree = "<group>"; };
@@ -115,8 +124,13 @@
 		DF1F4C7714E273D4002D13D5 /* tableviewheader_add_landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableviewheader_add_landscape@2x.png"; sourceTree = "<group>"; };
 		DF2110FE14D877EB009B4E26 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		DF21110114D878DD009B4E26 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		DF9D51AF158A33D40097BD76 /* tableviewheader_facetime_landscape_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableviewheader_facetime_landscape_selected@2x.png"; sourceTree = "<group>"; };
+		DF9D51B1158A34140097BD76 /* tableviewheader_facetime_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tableviewheader_facetime_landscape.png; sourceTree = "<group>"; };
 		DFA9493814DAF58C00FC18A8 /* SSMessagesViewControllerCameraButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SSMessagesViewControllerCameraButton.png; path = ../../../Libraries/ssmessagesviewcontroller/Images/SSMessagesViewControllerCameraButton.png; sourceTree = "<group>"; };
 		DFA9493A14DAF59C00FC18A8 /* SSMessagesViewControllerSendButtonBackgroundGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SSMessagesViewControllerSendButtonBackgroundGreen.png; path = ../../../Libraries/ssmessagesviewcontroller/Images/SSMessagesViewControllerSendButtonBackgroundGreen.png; sourceTree = "<group>"; };
+		DFAF362A1618C7B400499FCE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		DFAF362D1618CAFC00499FCE /* tableheaderview_message_landscape_iphone5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableheaderview_message_landscape_iphone5@2x.png"; sourceTree = "<group>"; };
+		DFAF362F1618CC2700499FCE /* tableviewheader_ring_landscape_iphone5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableviewheader_ring_landscape_iphone5@2x.png"; sourceTree = "<group>"; };
 		DFDA980E14C5CC280082F911 /* SL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFDA981214C5CC280082F911 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DFDA981414C5CC280082F911 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -214,13 +228,19 @@
 				DF00B88214C9956E008A891E /* tableviewheader_ring@2x.png */,
 				DF00B88414C99660008A891E /* tableviewheader_ring_selected@2x.png */,
 				DF1F4C7214E27392002D13D5 /* tableviewheader_ring_landscape@2x.png */,
+				DF0CA734158B7F5100AB7E30 /* tableviewheader_ring_landscape_selected@2x.png */,
+				DFAF362F1618CC2700499FCE /* tableviewheader_ring_landscape_iphone5@2x.png */,
 				DF00B88914C997C2008A891E /* tableviewheader_facetime@2x.png */,
 				DF00B88614C9977B008A891E /* tableviewheader_facetime_selected@2x.png */,
+				DF9D51B1158A34140097BD76 /* tableviewheader_facetime_landscape.png */,
+				DF9D51AF158A33D40097BD76 /* tableviewheader_facetime_landscape_selected@2x.png */,
 				DF00B88814C997C2008A891E /* tableviewheader_add@2x.png */,
 				DF00B89014C99831008A891E /* tableviewheader_add_selected@2x.png */,
 				DF1F4C7714E273D4002D13D5 /* tableviewheader_add_landscape@2x.png */,
+				DF0CA737158B7F7800AB7E30 /* tableviewheader_add_landscape_selected@2x.png */,
 				DF00B88E14C997D1008A891E /* tableheaderview_message@2x.png */,
 				DF1F4C7514E273C1002D13D5 /* tableheaderview_message_landscape@2x.png */,
+				DFAF362D1618CAFC00499FCE /* tableheaderview_message_landscape_iphone5@2x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -293,6 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				DFDA981A14C5CC280082F911 /* SL-Info.plist */,
+				DFAF362A1618C7B400499FCE /* Default-568h@2x.png */,
 				DFDA981B14C5CC280082F911 /* InfoPlist.strings */,
 				DFDA981E14C5CC280082F911 /* main.m */,
 				DFDA982014C5CC280082F911 /* SL-Prefix.pch */,
@@ -323,7 +344,6 @@
 				DFDA980A14C5CC280082F911 /* Sources */,
 				DFDA980B14C5CC280082F911 /* Frameworks */,
 				DFDA980C14C5CC280082F911 /* Resources */,
-				DFD35EAF14D75A570073AD9F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -399,26 +419,17 @@
 				DF1F4C7314E27392002D13D5 /* tableviewheader_ring_landscape@2x.png in Resources */,
 				DF1F4C7614E273C1002D13D5 /* tableheaderview_message_landscape@2x.png in Resources */,
 				DF1F4C7814E273D4002D13D5 /* tableviewheader_add_landscape@2x.png in Resources */,
+				DF9D51B0158A33D40097BD76 /* tableviewheader_facetime_landscape_selected@2x.png in Resources */,
+				DF9D51B2158A34140097BD76 /* tableviewheader_facetime_landscape.png in Resources */,
+				DF0CA735158B7F5100AB7E30 /* tableviewheader_ring_landscape_selected@2x.png in Resources */,
+				DF0CA738158B7F7800AB7E30 /* tableviewheader_add_landscape_selected@2x.png in Resources */,
+				DFAF362B1618C7B400499FCE /* Default-568h@2x.png in Resources */,
+				DFAF362E1618CAFD00499FCE /* tableheaderview_message_landscape_iphone5@2x.png in Resources */,
+				DFAF36301618CC2700499FCE /* tableviewheader_ring_landscape_iphone5@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		DFD35EAF14D75A570073AD9F /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export CODESIGN_ALLOCATE=/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ]; then\n/Developer/iphoneentitlements401/gen_entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\ncodesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DFDA980A14C5CC280082F911 /* Sources */ = {
@@ -479,7 +490,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -494,7 +509,8 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -503,7 +519,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -511,8 +531,9 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -525,14 +546,14 @@
 					armv6,
 					armv7,
 				);
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Axel Moller (K25H98TRFR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SL/SL-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "SL/SL-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "FD543E3F-9782-4FB7-89FC-AD3F1A685281";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -544,14 +565,14 @@
 					armv6,
 					armv7,
 				);
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Axel Moller (K25H98TRFR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SL/SL-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "SL/SL-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "FD543E3F-9782-4FB7-89FC-AD3F1A685281";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

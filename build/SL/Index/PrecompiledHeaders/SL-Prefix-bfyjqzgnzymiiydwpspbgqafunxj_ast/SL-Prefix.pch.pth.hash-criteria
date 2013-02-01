@@ -1,0 +1,27 @@
+Contents of /Users/n1mda/Programming/ObjC/sl-sms-iphone/SL/SL-Prefix.pch
+
+arm-apple-darwin12.2.1
+-x
+objective-c
+-arch
+armv7
+-fmessage-length=0
+-std=gnu99
+-fpascal-strings
+-Os
+-isysroot
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk
+-fstrict-aliasing
+-g
+-fvisibility=hidden
+-miphoneos-version-min=3.0
+-iquote
+-iquote
+-I/Users/n1mda/Programming/ObjC/sl-sms-iphone/build/Build/Intermediates/ArchiveIntermediates/SL/BuildProductsPath/Release-iphoneos/include
+-F/Users/n1mda/Programming/ObjC/sl-sms-iphone/build/Build/Intermediates/ArchiveIntermediates/SL/BuildProductsPath/Release-iphoneos
+-ferror-limit=10
+-working-directory=/Users/n1mda/Programming/ObjC/sl-sms-iphone
+-Xclang
+-detailed-preprocessing-record
+-DNS_BLOCK_ASSERTIONS=1
+SDK_PRODUCT_BUILD_VERSION=10B141

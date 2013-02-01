@@ -1,0 +1,1 @@
+/Users/n1mda/Programming/ObjC/sl-sms-iphone/build/Build/Intermediates/ArchiveIntermediates/SL/InstallationBuildProductsLocation/Applications/SL.app

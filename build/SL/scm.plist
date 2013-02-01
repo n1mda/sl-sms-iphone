@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FoundWorkingCopyPaths</key>
+	<array>
+		<string>/Users/n1mda/Programming/ObjC/sl-sms-iphone</string>
+		<string>/Users/n1mda/Programming/ObjC/Libraries/ssmessagesviewcontroller</string>
+		<string>/Users/n1mda/Programming/ObjC/sl-sms-iphone/ssmessagesviewcontroller</string>
+	</array>
+	<key>LastWorkingCopyScanDate</key>
+	<date>2013-02-01T10:47:24Z</date>
+	<key>MissingFilePaths</key>
+	<array/>
+	<key>Version</key>
+	<integer>4</integer>
+</dict>
+</plist>

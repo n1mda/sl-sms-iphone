@@ -112,7 +112,7 @@
     
     SMS *sentSMS = [[SMS alloc] init];
     [sentSMS setDate:[NSDate date]];
-    [sentSMS setSender:@"72-150"];
+    [sentSMS setSender:@"076-720 10 10"];
     [sentSMS setMessage:[NSString stringWithFormat:@"%@%@", reduced.on ? @"R" : @"H", [[zones valueForKey:@"description"] componentsJoinedByString:@""]]];
     
     [sentSMS setIncoming:NO];
